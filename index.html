@@ -35,7 +35,7 @@
         </dropdown>
         <li slot="right">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -47,9 +47,9 @@
             <li class="mt-2"><a href="/markbind-plain-site/index.html" class="site-nav__a current">Home 🏠</a></li>
             <li class="mt-2"><a href="/markbind-plain-site/contents/topic1.html" class="site-nav__a">Topic 1</a></li>
             <li class="mt-2"><a href="/markbind-plain-site/contents/topic2.html" class="site-nav__a">Topic 2</a></li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Topic 3
-                <i class="dropdown-btn-icon rotate-icon">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Topic 3 
+ <i class="dropdown-btn-icon rotate-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
               <div class="dropdown-container dropdown-container-open">
                 <ul class="pl-3 site-nav-list">
                   <li class="mt-2"><a href="/markbind-plain-site/contents/topic3a.html" class="site-nav__a">Topic 3a</a></li>
@@ -64,15 +64,17 @@
         <br>
         <div class="jumbotron jumbotron-fluid bg-primary text-white">
           <div class="container">
-            <h1 class="display-4">Landing Page Title</h1>
+            <h1 class="display-4">Landing Page Title 2</h1>
             <p class="lead">A tagline can go here</p>
           </div>
         </div>
         <h1 id="heading-1">Heading 1<a class="fa fa-anchor" href="#heading-1"></a></h1>
-        <p>Some text some text some text some text some text some text some text. <strong>Some text some text some text some text some text <mark>some text</mark> some text</strong>. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.</p>
+        <p>Some text some text some text some text some text some text some text. <strong>Some text some text some text some text some text <mark>some text</mark> some text</strong>. Some text some text some text some text some text some text some text some
+          text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.</p>
         <p><strong>A block quote:</strong></p>
         <blockquote>
-          <p>Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.</p>
+          <p>Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text
+            some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.</p>
         </blockquote>
         <p><strong>A list:</strong></p>
         <ul>
@@ -91,9 +93,12 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">foo</span>&gt;</span>
 </code></pre>
         <h2 id="sub-heading-1-1">Sub Heading 1.1<a class="fa fa-anchor" href="#sub-heading-1-1"></a></h2>
-        <p>A <tooltip effect="scale" content=":exclamation: some **important explanation**" placement="top" trigger="hover">tooltip</tooltip>, a <trigger for="modal:modalinfo" trigger="click">modal</trigger>, a <a href="https://markbind.org/">link</a>, a <span class="badge badge-danger">badge</span>, another <span class="badge badge-warning">badge</span>.</p>
+        <p>A
+          <tooltip effect="scale" content=":exclamation: some **important explanation**" placement="top" trigger="hover">tooltip</tooltip>, a
+          <trigger for="modal:modalinfo" trigger="click">modal</trigger>, a <a href="https://markbind.org/">link</a>, a <span class="badge badge-danger">badge</span>, another <span class="badge badge-warning">badge</span>.</p>
         <modal title="Modal Title" id="modal:modalinfo">
-          Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
+          Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text
+          some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
         </modal>
         <p><strong>A table:</strong></p>
         <div class="table-responsive">
@@ -124,11 +129,12 @@
         </div>
         <h2 id="sub-heading-1-2">Sub Heading 1.2<a class="fa fa-anchor" href="#sub-heading-1-2"></a></h2>
         <p><strong>Media embeds:</strong></p>
-        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
         <p><strong>Tabs:</strong></p>
         <tabs>
           <tab header="Tab X">
-            Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
+            Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text
+            some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
           </tab>
           <tab header="Tab Y">
             ...
@@ -157,10 +163,11 @@
         <br>
         <h1 id="heading-3">Heading 3<a class="fa fa-anchor" href="#heading-3"></a></h1>
         <panel header="Expandable panel" type="info">
-          Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
+          Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text
+          some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
         </panel>
         <br>
-        <panel header="Expanded panel" alt="Minimized panel" type="success" minimized>
+        <panel header="Expanded panel" alt="Minimized panel" type="success" minimized="">
           ...
         </panel>
       </div>
