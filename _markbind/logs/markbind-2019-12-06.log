@@ -34,3 +34,49 @@ and the repository exists.
 
 2019-12-06T05:58:44.897Z - error: fatal: A branch named 'gh-pages' already exists.
 
+2019-12-06T06:01:49.773Z - error: fatal: A branch named 'gh-pages' already exists.
+
+2019-12-06T06:05:11.358Z - error: fatal: A branch named 'gh-pages' already exists.
+
+2019-12-06T06:07:20.025Z - error: fatal: A branch named 'gh-pages' already exists.
+
+2019-12-06T06:09:29.049Z - error: fatal: A branch named 'gh-pages' already exists.
+
+2019-12-06T06:10:49.887Z - error: fatal: A branch named 'gh-pages' already exists.
+
+2019-12-06T06:12:09.122Z - error: git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+2019-12-06T06:12:25.946Z - error: fatal: A branch named 'gh-pages' already exists.
+
+2019-12-06T06:14:45.637Z - error: fatal: A branch named 'gh-pages' already exists.
+
+2019-12-06T06:16:18.144Z - error: fatal: A branch named 'gh-pages' already exists.
+
+2019-12-06T06:20:08.977Z - info: Website generation started at 2:20:08 PM
+2019-12-06T06:20:09.028Z - info: Building assets...
+2019-12-06T06:20:09.056Z - info: Assets built
+2019-12-06T06:20:09.056Z - info: Generating pages...
+2019-12-06T06:20:09.546Z - info: Pages built
+2019-12-06T06:20:09.662Z - info: Website generation complete! Total build time: 0.729s
+2019-12-06T06:20:09.738Z - info: Serving "C:\Users\neilb\Projects\markbind-plain-site\_site" at http://127.0.0.1:8080
+2019-12-06T06:20:09.738Z - info: Press CTRL+C to stop ...
+2019-12-06T06:20:09.768Z - info: Site data built
+2019-12-06T06:20:30.094Z - error: fatal: A branch named 'gh-pages' already exists.
+
+2019-12-06T07:40:03.133Z - error: Received disconnect from 52.74.223.119 port 22:11: Bye Bye
+Disconnected from 52.74.223.119 port 22
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+2019-12-06T07:40:16.523Z - error: fatal: A branch named 'gh-pages' already exists.
+
+2019-12-06T08:12:19.043Z - error: fatal: A branch named 'gh-pages' already exists.
+
+2019-12-06T08:17:16.280Z - info: Deployed!
+2019-12-06T08:27:04.076Z - info: Deployed!
