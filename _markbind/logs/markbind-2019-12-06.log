@@ -1,0 +1,32 @@
+2019-12-06T05:49:00.802Z - info: Initialization success.
+2019-12-06T05:49:14.672Z - info: Website generation started at 1:49:14 PM
+2019-12-06T05:49:14.713Z - info: Building assets...
+2019-12-06T05:49:14.724Z - info: Assets built
+2019-12-06T05:49:14.725Z - info: Generating pages...
+2019-12-06T05:49:15.239Z - info: Pages built
+2019-12-06T05:49:15.351Z - info: Website generation complete! Total build time: 0.684s
+2019-12-06T05:49:15.423Z - info: Serving "C:\Users\neilb\Projects\markbind-plain-site\_site" at http://127.0.0.1:8080
+2019-12-06T05:49:15.424Z - info: Press CTRL+C to stop ...
+2019-12-06T05:49:15.453Z - info: Site data built
+2019-12-06T05:50:20.369Z - info: Website generation started at 1:50:20 PM
+2019-12-06T05:50:20.412Z - info: Building assets...
+2019-12-06T05:50:20.426Z - info: Assets built
+2019-12-06T05:50:20.428Z - info: Generating pages...
+2019-12-06T05:50:20.994Z - info: Pages built
+2019-12-06T05:50:21.122Z - info: Website generation complete! Total build time: 0.794s
+2019-12-06T05:50:21.123Z - info: Build success!
+2019-12-06T05:50:21.137Z - info: Site data built
+2019-12-06T05:50:52.919Z - error: Cloning into '..\..\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\gh-pages\.cache\git@github.com!nbriannl!markbind-plain-site.git'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+2019-12-06T05:53:41.652Z - error: fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+2019-12-06T05:53:55.011Z - error: fatal: A branch named 'gh-pages' already exists.
+
