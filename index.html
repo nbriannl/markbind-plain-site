@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.6.0">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Landing Page</title>
   <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
@@ -18,20 +18,19 @@
   <link rel="stylesheet" href="markbind/css/site-nav.css">
   <link rel="stylesheet" href="markbind/css/page-nav.css">
 
-
 </head>
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
       <navbar type="dark" class="temp-navbar">
-        <a slot="brand" href="/markbind-plain-site/index.html" title="Home" class="navbar-brand">Your Logo</a>
-        <li><a href="/markbind-plain-site/contents/topic1.html" class="nav-link">Topic 1</a></li>
-        <li><a href="/markbind-plain-site/contents/topic2.html" class="nav-link">Topic 2</a></li>
+        <a slot="brand" href="/index.html" title="Home" class="navbar-brand">Your Logo</a>
+        <li><a href="/contents/topic1.html" class="nav-link">Topic 1</a></li>
+        <li><a href="/contents/topic2.html" class="nav-link">Topic 2</a></li>
         <div class="nav-link temp-dropdown-placeholder">Topic 3</div>
         <dropdown text="Topic 3" class="nav-link temp-dropdown">
-          <li><a href="/markbind-plain-site/contents/topic3a.html" class="dropdown-item">Topic 3a</a></li>
-          <li><a href="/markbind-plain-site/contents/topic3b.html" class="dropdown-item">Topic 3b</a></li>
+          <li><a href="/contents/topic3a.html" class="dropdown-item">Topic 3a</a></li>
+          <li><a href="/contents/topic3b.html" class="dropdown-item">Topic 3b</a></li>
         </dropdown>
         <li slot="right">
           <form class="navbar-form">
@@ -44,16 +43,16 @@
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
           <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/markbind-plain-site/index.html" class="site-nav__a current">Home 🏠</a></li>
-            <li class="mt-2"><a href="/markbind-plain-site/contents/topic1.html" class="site-nav__a">Topic 1</a></li>
-            <li class="mt-2"><a href="/markbind-plain-site/contents/topic2.html" class="site-nav__a">Topic 2</a></li>
+            <li class="mt-2"><a href="/index.html" class="site-nav__a current">Home 🏠</a></li>
+            <li class="mt-2"><a href="/contents/topic1.html" class="site-nav__a">Topic 1</a></li>
+            <li class="mt-2"><a href="/contents/topic2.html" class="site-nav__a">Topic 2</a></li>
             <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Topic 3 
  <i class="dropdown-btn-icon rotate-icon">
 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
               <div class="dropdown-container dropdown-container-open">
                 <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/markbind-plain-site/contents/topic3a.html" class="site-nav__a">Topic 3a</a></li>
-                  <li class="mt-2"><a href="/markbind-plain-site/contents/topic3b.html" class="site-nav__a">Topic 3b</a></li>
+                  <li class="mt-2"><a href="/contents/topic3a.html" class="site-nav__a">Topic 3a</a></li>
+                  <li class="mt-2"><a href="/contents/topic3b.html" class="site-nav__a">Topic 3b</a></li>
                 </ul>
               </div>
             </li>
@@ -62,95 +61,8 @@
       </nav>
       <div id="content-wrapper">
         <br>
-        <div class="jumbotron jumbotron-fluid bg-primary text-white">
-          <div class="container">
-            <h1 class="display-4">Landing Page Title 2</h1>
-            <p class="lead">A tagline can go here</p>
-          </div>
-        </div>
-        <h1 id="heading-1">Heading 1<a class="fa fa-anchor" href="#heading-1"></a></h1>
-        <p>Some text some text some text some text some text some text some text. <strong>Some text some text some text some text some text <mark>some text</mark> some text</strong>. Some text some text some text some text some text some text some text some
-          text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.</p>
-        <p><strong>A block quote:</strong></p>
-        <blockquote>
-          <p>Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text
-            some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.</p>
-        </blockquote>
-        <p><strong>A list:</strong></p>
-        <ul>
-          <li>item A</li>
-          <li>item B
-            <ol>
-              <li>item b1</li>
-              <li>item b2</li>
-              <li>item b3</li>
-            </ol>
-          </li>
-        </ul>
-        <p><strong>A <code>code</code> example:</strong></p>
-        <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">foo</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">bar</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"name"</span>&gt;</span>goo<span class="hljs-tag">&lt;/<span class="hljs-name">bar</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">foo</span>&gt;</span>
-</code></pre>
-        <h2 id="sub-heading-1-1">Sub Heading 1.1<a class="fa fa-anchor" href="#sub-heading-1-1"></a></h2>
-        <p>A
-          <tooltip effect="scale" content=":exclamation: some **important explanation**" placement="top" trigger="hover">tooltip</tooltip>, a
-          <trigger for="modal:modalinfo" trigger="click">modal</trigger>, a <a href="https://markbind.org/">link</a>, a <span class="badge badge-danger">badge</span>, another <span class="badge badge-warning">badge</span>.</p>
-        <modal title="Modal Title" id="modal:modalinfo">
-          Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text
-          some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
-        </modal>
-        <p><strong>A table:</strong></p>
-        <div class="table-responsive">
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th style="text-align:center">Column 1</th>
-                <th style="text-align:center">Column 2</th>
-                <th style="text-align:center">Column 3</th>
-                <th><span aria-hidden="true" class="far fa-thumbs-up"></span> / <span aria-hidden="true" class="far fa-thumbs-down"></span>?</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="text-align:center">value1</td>
-                <td style="text-align:center">x</td>
-                <td style="text-align:center">5</td>
-                <td><span aria-hidden="true" class="far fa-thumbs-up"></span></td>
-              </tr>
-              <tr>
-                <td style="text-align:center">value2</td>
-                <td style="text-align:center">y</td>
-                <td style="text-align:center">20</td>
-                <td><span aria-hidden="true" class="far fa-thumbs-down"></span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <h2 id="sub-heading-1-2">Sub Heading 1.2<a class="fa fa-anchor" href="#sub-heading-1-2"></a></h2>
-        <p><strong>Media embeds:</strong></p>
-        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-        <p><strong>Tabs:</strong></p>
-        <tabs>
-          <tab header="Tab X">
-            Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text
-            some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
-          </tab>
-          <tab header="Tab Y">
-            ...
-          </tab>
-          <tab-group header="Tab group">
-            <tab header="Tab Y.1">
-              ...
-            </tab>
-            <tab header="Tab Y.2">
-              ...
-            </tab>
-          </tab-group>
-        </tabs>
-        <br>
-        <h1 id="heading-2">Heading 2<a class="fa fa-anchor" href="#heading-2"></a></h1>
-        <p><strong>Some boxes:</strong></p>
+        <h1 id="testing-no-icon-no-background-no-border">Testing no-icon, no-background, no-border<a class="fa fa-anchor" href="#testing-no-icon-no-background-no-border"></a></h1>
+        <h2 id="default-boxes">Default boxes<a class="fa fa-anchor" href="#default-boxes"></a></h2>
         <box>
           default
         </box>
@@ -160,33 +72,517 @@
         <box type="warning">
           warning
         </box>
-        <br>
-        <h1 id="heading-3">Heading 3<a class="fa fa-anchor" href="#heading-3"></a></h1>
-        <panel header="Expandable panel" type="info">
-          Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text
-          some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
-        </panel>
-        <br>
-        <panel header="Expanded panel" alt="Minimized panel" type="success" minimized="">
-          ...
-        </panel>
+        <box type="success">
+          success
+        </box>
+        <box type="important">
+          important
+        </box>
+        <box type="wrong">
+          wrong
+        </box>
+        <box type="tip">
+          tip
+        </box>
+        <box type="definition">
+          definition
+        </box>
+        <box type="info" dismissible="">
+          dismissible info
+        </box>
+        <box type="success" header="Tip box header">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" header="Tip box header" dismissible="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </box>
+        </box>
+        <box type="info" light="">
+          info light
+        </box>
+        <box type="warning" light="">
+          warning light
+        </box>
+        <box type="success" light="">
+          success light
+        </box>
+        <box type="important" light="">
+          important light
+        </box>
+        <box type="wrong" light="">
+          wrong light
+        </box>
+        <box type="tip" light="">
+          tip light
+        </box>
+        <box type="definition" light="">
+          definition light
+        </box>
+        <box seamless>
+          info seamless
+        </box>
+        <box type="info" seamless>
+          info seamless
+        </box>
+        <box type="warning" seamless>
+          warning seamless
+        </box>
+        <box type="success" seamless>
+          success seamless
+        </box>
+        <box type="important" seamless>
+          important seamless
+        </box>
+        <box type="wrong" seamless>
+          wrong seamless
+        </box>
+        <box type="tip" seamless>
+          tip seamless
+        </box>
+        <box type="definition" seamless>
+          definition seamless
+        </box>
+        <box background-color="white" border-color="grey" border-left-color="blue">
+          default, styled as empty box with blue left border
+        </box>
+        <box type="info"><template slot="_icon">🚀</template> info, with rocket icon
+        </box>
+        <box type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <box type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <box type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <h2 id="no-icon">no-icon<a class="fa fa-anchor" href="#no-icon"></a></h2>
+        <box no-icon="">
+          default
+        </box>
+        <box no-icon="" type="info">
+          info
+        </box>
+        <box no-icon="" type="warning">
+          warning
+        </box>
+        <box no-icon="" type="success">
+          success
+        </box>
+        <box no-icon="" type="important">
+          important
+        </box>
+        <box no-icon="" type="wrong">
+          wrong
+        </box>
+        <box no-icon="" type="tip">
+          tip
+        </box>
+        <box no-icon="" type="definition">
+          definition
+        </box>
+        <box no-icon="" type="info" dismissible="">
+          dismissible info
+        </box>
+        <box no-icon="" type="success" header="Tip box header">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" header="Tip box header" dismissible="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </box>
+        </box>
+        <box type="success" header="Tip box header">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <box no-icon="" type="warning" header="Tip box header" dismissible="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </box>
+        </box>
+        <box no-icon="" type="info" light="">
+          info light
+        </box>
+        <box no-icon="" type="warning" light="">
+          warning light
+        </box>
+        <box no-icon="" type="success" light="">
+          success light
+        </box>
+        <box no-icon="" type="important" light="">
+          important light
+        </box>
+        <box no-icon="" type="wrong" light="">
+          wrong light
+        </box>
+        <box no-icon="" type="tip" light="">
+          tip light
+        </box>
+        <box no-icon="" type="definition" light="">
+          definition light
+        </box>
+        <box no-icon="" seamless>
+          info seamless
+        </box>
+        <box no-icon="" type="info" seamless>
+          info seamless
+        </box>
+        <box no-icon="" type="warning" seamless>
+          warning seamless
+        </box>
+        <box no-icon="" type="success" seamless>
+          success seamless
+        </box>
+        <box no-icon="" type="important" seamless>
+          important seamless
+        </box>
+        <box no-icon="" type="wrong" seamless>
+          wrong seamless
+        </box>
+        <box no-icon="" type="tip" seamless>
+          tip seamless
+        </box>
+        <box no-icon="" type="definition" seamless>
+          definition seamless
+        </box>
+        <box no-icon="" background-color="white" border-color="grey" border-left-color="blue">
+          default, styled as empty box with blue left border
+        </box>
+        <box no-icon="" type="info"><template slot="_icon">🚀</template> info, with rocket icon
+        </box>
+        <box no-icon="" type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <box no-icon="" type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <box no-icon="" type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <h2 id="no-background">no-background<a class="fa fa-anchor" href="#no-background"></a></h2>
+        <box no-background="">
+          default
+        </box>
+        <box no-background="" type="info">
+          info
+        </box>
+        <box no-background="" type="warning">
+          warning
+        </box>
+        <box no-background="" type="success">
+          success
+        </box>
+        <box no-background="" type="important">
+          important
+        </box>
+        <box no-background="" type="wrong">
+          wrong
+        </box>
+        <box no-background="" type="tip">
+          tip
+        </box>
+        <box no-background="" type="definition">
+          definition
+        </box>
+        <box no-background="" type="info" dismissible="">
+          dismissible info
+        </box>
+        <box no-background="" type="success" header="Tip box header">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" header="Tip box header" dismissible="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </box>
+        </box>
+        <box type="success" header="Tip box header">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <box no-background="" type="warning" header="Tip box header" dismissible="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </box>
+        </box>
+        <box no-background="" type="info" light="">
+          info light
+        </box>
+        <box no-background="" type="warning" light="">
+          warning light
+        </box>
+        <box no-background="" type="success" light="">
+          success light
+        </box>
+        <box no-background="" type="important" light="">
+          important light
+        </box>
+        <box no-background="" type="wrong" light="">
+          wrong light
+        </box>
+        <box no-background="" type="tip" light="">
+          tip light
+        </box>
+        <box no-background="" type="definition" light="">
+          definition light
+        </box>
+        <box no-background="" seamless>
+          info seamless
+        </box>
+        <box no-background="" type="info" seamless>
+          info seamless
+        </box>
+        <box no-background="" type="warning" seamless>
+          warning seamless
+        </box>
+        <box no-background="" type="success" seamless>
+          success seamless
+        </box>
+        <box no-background="" type="important" seamless>
+          important seamless
+        </box>
+        <box no-background="" type="wrong" seamless>
+          wrong seamless
+        </box>
+        <box no-background="" type="tip" seamless>
+          tip seamless
+        </box>
+        <box no-background="" type="definition" seamless>
+          definition seamless
+        </box>
+        <box no-background="" background-color="white" border-color="grey" border-left-color="blue">
+          default, styled as empty box with blue left border
+        </box>
+        <box no-background="" type="info"><template slot="_icon">🚀</template> info, with rocket icon
+        </box>
+        <box no-background="" type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <box no-background="" type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <box no-background="" type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <h2 id="no-border">no-border<a class="fa fa-anchor" href="#no-border"></a></h2>
+        <box no-border="">
+          default
+        </box>
+        <box no-border="" type="info">
+          info
+        </box>
+        <box no-border="" type="warning">
+          warning
+        </box>
+        <box no-border="" type="success">
+          success
+        </box>
+        <box no-border="" type="important">
+          important
+        </box>
+        <box no-border="" type="wrong">
+          wrong
+        </box>
+        <box no-border="" type="tip">
+          tip
+        </box>
+        <box no-border="" type="definition">
+          definition
+        </box>
+        <box no-border="" type="info" dismissible="">
+          dismissible info
+        </box>
+        <box no-border="" type="success" header="Tip box header">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" header="Tip box header" dismissible="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </box>
+        </box>
+        <box type="success" header="Tip box header">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <box no-border="" type="warning" header="Tip box header" dismissible="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </box>
+        </box>
+        <box no-border="" type="info" light="">
+          info light
+        </box>
+        <box no-border="" type="warning" light="">
+          warning light
+        </box>
+        <box no-border="" type="success" light="">
+          success light
+        </box>
+        <box no-border="" type="important" light="">
+          important light
+        </box>
+        <box no-border="" type="wrong" light="">
+          wrong light
+        </box>
+        <box no-border="" type="tip" light="">
+          tip light
+        </box>
+        <box no-border="" type="definition" light="">
+          definition light
+        </box>
+        <box no-border="" seamless>
+          info seamless
+        </box>
+        <box no-border="" type="info" seamless>
+          info seamless
+        </box>
+        <box no-border="" type="warning" seamless>
+          warning seamless
+        </box>
+        <box no-border="" type="success" seamless>
+          success seamless
+        </box>
+        <box no-border="" type="important" seamless>
+          important seamless
+        </box>
+        <box no-border="" type="wrong" seamless>
+          wrong seamless
+        </box>
+        <box no-border="" type="tip" seamless>
+          tip seamless
+        </box>
+        <box no-border="" type="definition" seamless>
+          definition seamless
+        </box>
+        <box no-border="" background-color="white" border-color="grey" border-left-color="blue">
+          default, styled as empty box with blue left border
+        </box>
+        <box no-border="" type="info"><template slot="_icon">🚀</template> info, with rocket icon
+        </box>
+        <box no-border="" type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <box no-border="" type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <box no-border="" type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <h2 id="no-background-no-border">no-background no-border<a class="fa fa-anchor" href="#no-background-no-border"></a></h2>
+        <box no-background="" no-border="">
+          default
+        </box>
+        <box no-background="" no-border="" type="info">
+          info
+        </box>
+        <box no-background="" no-border="" type="warning">
+          warning
+        </box>
+        <box no-background="" no-border="" type="success">
+          success
+        </box>
+        <box no-background="" no-border="" type="important">
+          important
+        </box>
+        <box no-background="" no-border="" type="wrong">
+          wrong
+        </box>
+        <box no-background="" no-border="" type="tip">
+          tip
+        </box>
+        <box no-background="" no-border="" type="definition">
+          definition
+        </box>
+        <box no-background="" no-border="" type="info" dismissible="">
+          dismissible info
+        </box>
+        <box no-background="" no-border="" type="success" header="Tip box header">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" header="Tip box header" dismissible="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </box>
+        </box>
+        <box type="success" header="Tip box header">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <box no-background="" no-border="" type="warning" header="Tip box header" dismissible="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </box>
+        </box>
+        <box no-background="" no-border="" type="info" light="">
+          info light
+        </box>
+        <box no-background="" no-border="" type="warning" light="">
+          warning light
+        </box>
+        <box no-background="" no-border="" type="success" light="">
+          success light
+        </box>
+        <box no-background="" no-border="" type="important" light="">
+          important light
+        </box>
+        <box no-background="" no-border="" type="wrong" light="">
+          wrong light
+        </box>
+        <box no-background="" no-border="" type="tip" light="">
+          tip light
+        </box>
+        <box no-background="" no-border="" type="definition" light="">
+          definition light
+        </box>
+        <box no-background="" no-border="" seamless>
+          info seamless
+        </box>
+        <box no-background="" no-border="" type="info" seamless>
+          info seamless
+        </box>
+        <box no-background="" no-border="" type="warning" seamless>
+          warning seamless
+        </box>
+        <box no-background="" no-border="" type="success" seamless>
+          success seamless
+        </box>
+        <box no-background="" no-border="" type="important" seamless>
+          important seamless
+        </box>
+        <box no-background="" no-border="" type="wrong" seamless>
+          wrong seamless
+        </box>
+        <box no-background="" no-border="" type="tip" seamless>
+          tip seamless
+        </box>
+        <box no-background="" no-border="" type="definition" seamless>
+          definition seamless
+        </box>
+        <p><em><strong>Note: no-background does not override border-left-color. Which allows you to acheive this.</strong></em></p>
+        <pre><code class="hljs">&lt;box no-background no-border background-color=&quot;white&quot; border-color=&quot;grey&quot; border-left-color=&quot;blue&quot;&gt;
+    default, styled as empty box with blue left border
+&lt;/box&gt; 
+</code></pre>
+        <box no-background="" no-border="" background-color="white" border-color="grey" border-left-color="blue">
+          default, styled as empty box with blue left border
+        </box>
+        <p><em><strong>If you really wanted to specify no-border why even mention border-left-color in the first place?</strong></em></p>
+        <pre><code class="hljs">&lt;box no-background no-border background-color=&quot;white&quot; border-color=&quot;grey&quot;&gt;
+    default, styled as empty box &lt;b&gt;without&lt;/b&gt; blue left border
+&lt;/box&gt;
+</code></pre>
+        <box no-background="" no-border="" background-color="white" border-color="grey">
+          default, styled as empty box <b>without</b> blue left border
+        </box>
+        <box no-background="" no-border="" type="info"><template slot="_icon">🚀</template> info, with rocket icon
+        </box>
+        <box no-background="" no-border="" type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <box no-background="" no-border="" type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
+        <box no-background="" no-border="" type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </box>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
           <a class="navbar-brand page-nav-title" href="#">Chapters of This Page</a>
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#heading-1">Heading 1&#x200E;</a>
+            <a class="nav-link py-1" href="#testing-no-icon-no-background-no-border">Testing no-icon, no-background, no-border&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#sub-heading-1-1">Sub Heading 1.1&#x200E;</a>
-              <a class="nav-link py-1" href="#sub-heading-1-2">Sub Heading 1.2&#x200E;</a>
+              <a class="nav-link py-1" href="#default-boxes">Default boxes&#x200E;</a>
+              <a class="nav-link py-1" href="#no-icon">no-icon&#x200E;</a>
+              <a class="nav-link py-1" href="#no-background">no-background&#x200E;</a>
+              <a class="nav-link py-1" href="#no-border">no-border&#x200E;</a>
+              <a class="nav-link py-1" href="#no-background-no-border">no-background no-border&#x200E;</a>
             </nav>
-            <a class="nav-link py-1" href="#heading-2">Heading 2&#x200E;</a>
-            <a class="nav-link py-1" href="#heading-3">Heading 3&#x200E;</a>
 
           </nav>
         </div>
       </nav>
     </div>
+
   </div>
 </body>
 <script src="markbind/js/vue.min.js"></script>
@@ -195,10 +591,11 @@
 <script src="markbind/js/polyfill.min.js"></script>
 <script src="markbind/js/bootstrap-vue.min.js"></script>
 <script>
-  const baseUrl = '/markbind-plain-site'
+  const baseUrl = ''
   const enableSearch = true
 </script>
 <script src="markbind/js/setup.js"></script>
+
 <script src="markbind/layouts/default/scripts.js"></script>
 
 </html>
