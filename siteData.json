@@ -4,11 +4,14 @@
     {
       "headings": {
         "testing-no-icon-no-background-no-border": "Testing no-icon, no-background, no-border",
+        "positive-attributes-override-presence-of-negative": "positive attributes override presence of negative",
         "default-boxes": "Default boxes",
         "no-icon": "no-icon",
         "no-background": "no-background",
         "no-border": "no-border",
-        "no-background-no-border": "no-background no-border"
+        "no-background-no-border": "no-background no-border",
+        "no-background-no-icon": "no-background no-icon",
+        "no-icon-no-border": "no-icon no-border"
       },
       "header": "header.md",
       "pageNav": 2,
