@@ -31,6 +31,11 @@
 <box no-icon type="info" icon=":rocket:">
     info
 </box>
+
+<box no-icon type="info" icon="">
+    info
+</box>
+
 ```
 
 <box no-background background-color="yellow">
@@ -50,6 +55,10 @@
 </box>
 
 <box no-icon type="info" icon=":rocket:">
+    info
+</box>
+
+<box no-icon type="info" icon="">
     info
 </box>
 
