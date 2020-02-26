@@ -10,16 +10,12 @@
       "title": "Landing Page",
       "layout": "default",
       "headings": {
-        "testing-no-icon-no-background-no-border": "Testing no-icon, no-background, no-border",
-        "default-box-has-icon": "default box has icon",
-        "positive-attributes-override-presence-of-negative": "positive attributes override presence of negative",
-        "default-boxes": "Default boxes",
-        "no-icon": "no-icon",
-        "no-background": "no-background",
-        "no-border": "no-border",
-        "no-background-no-border": "no-background no-border",
-        "no-background-no-icon": "no-background no-icon",
-        "no-icon-no-border": "no-icon no-border"
+        "landing-page-title": "Landing Page Title",
+        "heading-1": "Heading 1",
+        "sub-heading-1-1": "Sub Heading 1.1",
+        "sub-heading-1-2": "Sub Heading 1.2",
+        "heading-2": "Heading 2",
+        "heading-3": "Heading 3"
       },
       "headingKeywords": {}
     },
@@ -30,27 +26,7 @@
       "title": "",
       "layout": "default",
       "headings": {
-        "normal-boxes": "Normal boxes",
-        "normal-boxes-with-dismissible": "Normal boxes with dismissible",
-        "normal-boxes-with-heading": "Normal boxes with heading",
-        "normal-boxes-with-dismissible-with-heading": "Normal boxes with dismissible with heading",
-        "heading-with-markdown": "Heading with markdown 🚀",
-        "light-boxes": "light boxes",
-        "light-boxes-with-dismissible": "Light boxes with dismissible",
-        "light-boxes-with-heading": "Light boxes with heading",
-        "light-boxes-with-dismissible-with-heading": "Light boxes with dismissible with heading",
-        "heading-with-markdown-3": "Heading with markdown 🚀",
-        "seamless-boxes": "Seamless boxes",
-        "seamless-boxes-with-dismissible": "Seamless boxes with dismissible",
-        "seamless-boxes-with-heading": "Seamless boxes with heading",
-        "seamless-boxes-with-dismissible-with-heading": "Seamless boxes with dismissible with heading",
-        "markdown": "Markdown 🚀",
-        "markdown-2": "Markdown 🚀",
-        "light-seamless-boxes-seamless-should-have-no-effect": "Light seamless boxes ( seamless should have no effect )",
-        "light-seamless-boxes-with-dismissible-seamless-should-have-no-effect": "Light seamless boxes with dismissible ( seamless should have no effect )",
-        "light-seamless-boxes-with-heading-seamless-should-have-no-effect": "Light seamless boxes with heading ( seamless should have no effect )",
-        "light-seamless-boxes-with-dismissible-with-heading-seamless-should-have-no-effect": "Light seamless boxes with dismissible with heading ( seamless should have no effect )",
-        "heading-3": "Heading 3"
+        "topic-1": "Topic 1"
       },
       "headingKeywords": {}
     },
