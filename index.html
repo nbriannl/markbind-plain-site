@@ -5,19 +5,19 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="generator" content="MarkBind 2.11.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Landing Page</title>
   <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="markbind/css/octicons.css">
   <link rel="stylesheet" href="markbind/css/github.min.css">
   <link rel="stylesheet" href="markbind/css/markbind.css">
   <link rel="stylesheet" href="markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="markbind/css/site-nav.css">
   <link rel="stylesheet" href="markbind/css/page-nav.css">
-
 </head>
 
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
@@ -28,7 +28,7 @@
         <li><a href="/contents/topic1.html" class="nav-link">Topic 1</a></li>
         <li><a href="/contents/topic2.html" class="nav-link">Topic 2</a></li>
         <div class="nav-link temp-dropdown-placeholder">Topic 3</div>
-        <dropdown text="Topic 3" class="nav-link temp-dropdown">
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Topic 3</template>
           <li><a href="/contents/topic3a.html" class="dropdown-item">Topic 3a</a></li>
           <li><a href="/contents/topic3b.html" class="dropdown-item">Topic 3b</a></li>
         </dropdown>
@@ -44,7 +44,7 @@
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
           <ul class="px-0 site-nav-list">
             <li class="mt-2"><a href="/index.html" class="site-nav__a current">Home 🏠</a></li>
-            <li class="mt-2"><a href="/contents/topic1.html" class="site-nav__a">Topic 1</a></li>
+            <li class="mt-2"><a href="/contents/topic1.html" class="site-nav__a">Enhance box component heading #118</a></li>
             <li class="mt-2"><a href="/contents/topic2.html" class="site-nav__a">Topic 2</a></li>
             <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Topic 3 
  <i class="dropdown-btn-icon rotate-icon">
@@ -62,32 +62,11 @@
       <div id="content-wrapper">
         <br>
         <h1 id="testing-no-icon-no-background-no-border">Testing no-icon, no-background, no-border<a class="fa fa-anchor" href="#testing-no-icon-no-background-no-border"></a></h1>
+        <h2 id="default-box-has-icon">default box has icon<a class="fa fa-anchor" href="#default-box-has-icon"></a></h2>
+        <box no-icon=""><template slot="_icon">🚀</template> Lorem ipsum dolor sit amet,
+        </box>
         <h2 id="positive-attributes-override-presence-of-negative">positive attributes override presence of negative<a class="fa fa-anchor" href="#positive-attributes-override-presence-of-negative"></a></h2>
-        <pre><code class="hljs">&lt;box no-background background-color=&quot;yellow&quot;&gt;
-    Lorem ipsum dolor sit amet,
-&lt;/box&gt;
-
-&lt;box no-border border-color=&quot;grey&quot;&gt;
-    Lorem ipsum dolor sit amet,
-&lt;/box&gt;
-
-&lt;box no-border border-left-color=&quot;grey&quot;&gt;
-    Lorem ipsum dolor sit amet,
-&lt;/box&gt;
-
-&lt;box no-icon icon=&quot;:fas-camera:&quot; &gt;
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-&lt;/box&gt;
-
-&lt;box no-icon type=&quot;info&quot; icon=&quot;:rocket:&quot;&gt;
-    info
-&lt;/box&gt;
-
-&lt;box no-icon type=&quot;info&quot; icon=&quot;&quot;&gt;
-    info
-&lt;/box&gt;
-
-</code></pre>
+        <pre><code class="hljs"><span>&lt;box no-background background-color=&quot;yellow&quot;&gt;</span><span>    Lorem ipsum dolor sit amet,</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-border border-color=&quot;grey&quot;&gt;</span><span>    Lorem ipsum dolor sit amet,</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-border border-left-color=&quot;grey&quot;&gt;</span><span>    Lorem ipsum dolor sit amet,</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon icon=&quot;:fas-camera:&quot; &gt;</span><span>    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon type=&quot;info&quot; icon=&quot;:rocket:&quot;&gt;</span><span>    info</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon type=&quot;info&quot; icon=&quot;&quot;&gt;</span><span>    info</span><span>&lt;/box&gt;</span><span>&#x200B;</span></code></pre>
         <box no-background="" background-color="yellow">
           Lorem ipsum dolor sit amet,
         </box>
@@ -132,10 +111,10 @@
         <box type="info" dismissible="">
           dismissible info
         </box>
-        <box type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
         <box type="info" light="">
@@ -225,16 +204,16 @@
         <box no-icon="" type="info" dismissible="">
           dismissible info
         </box>
-        <box no-icon="" type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box no-icon="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
-        <box type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box no-icon="" type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box no-icon="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
         <box no-icon="" type="info" light="">
@@ -324,16 +303,16 @@
         <box no-background="" type="info" dismissible="">
           dismissible info
         </box>
-        <box no-background="" type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box no-background="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
-        <box type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box no-background="" type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box no-background="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
         <box no-background="" type="info" light="">
@@ -423,16 +402,16 @@
         <box no-border="" type="info" dismissible="">
           dismissible info
         </box>
-        <box no-border="" type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box no-border="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
-        <box type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box no-border="" type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box no-border="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
         <box no-border="" type="info" light="">
@@ -522,16 +501,16 @@
         <box no-background="" no-border="" type="info" dismissible="">
           dismissible info
         </box>
-        <box no-background="" no-border="" type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box no-background="" no-border="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
-        <box type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box no-background="" no-border="" type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box no-background="" no-border="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
         <box no-background="" no-border="" type="info" light="">
@@ -621,16 +600,16 @@
         <box no-background="" no-icon="" type="info" dismissible="">
           dismissible info
         </box>
-        <box no-background="" no-icon="" type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box no-background="" no-icon="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
-        <box type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box no-background="" no-icon="" type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box no-background="" no-icon="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
         <box no-background="" no-icon="" type="info" light="">
@@ -720,16 +699,16 @@
         <box no-icon="" no-border="" type="info" dismissible="">
           dismissible info
         </box>
-        <box no-icon="" no-border="" type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box no-icon="" no-border="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
-        <box type="success" header="Tip box header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <box no-icon="" no-border="" type="warning" header="Tip box header" dismissible="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          <box no-icon="" no-border="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </box>
         </box>
         <box no-icon="" no-border="" type="info" light="">
@@ -798,6 +777,7 @@
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#testing-no-icon-no-background-no-border">Testing no-icon, no-background, no-border&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#default-box-has-icon">default box has icon&#x200E;</a>
               <a class="nav-link py-1" href="#positive-attributes-override-presence-of-negative">positive attributes override presence of negative&#x200E;</a>
               <a class="nav-link py-1" href="#default-boxes">Default boxes&#x200E;</a>
               <a class="nav-link py-1" href="#no-icon">no-icon&#x200E;</a>
@@ -812,7 +792,6 @@
         </div>
       </nav>
     </div>
-
   </div>
 </body>
 <script src="markbind/js/vue.min.js"></script>
@@ -825,7 +804,6 @@
   const enableSearch = true
 </script>
 <script src="markbind/js/setup.js"></script>
-
 <script src="markbind/layouts/default/scripts.js"></script>
 
 </html>
