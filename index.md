@@ -9,6 +9,12 @@
 
 # Testing no-icon, no-background, no-border
 
+## default box has icon
+
+<box no-icon icon=":rocket:">
+    Lorem ipsum dolor sit amet,
+</box>
+
 ## positive attributes override presence of negative
 
 ```
