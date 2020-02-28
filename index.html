@@ -61,732 +61,127 @@
       </nav>
       <div id="content-wrapper">
         <br>
-        <h1 id="testing-no-icon-no-background-no-border">Testing no-icon, no-background, no-border<a class="fa fa-anchor" href="#testing-no-icon-no-background-no-border"></a></h1>
-        <h2 id="default-box-has-icon">default box has icon<a class="fa fa-anchor" href="#default-box-has-icon"></a></h2>
-        <box no-icon=""><template slot="_icon">🚀</template> Lorem ipsum dolor sit amet,
+        <br>
+        <h1 id="light-cannot-be-used-with-seamless">Light cannot be used with seamless<a class="fa fa-anchor" href="#light-cannot-be-used-with-seamless"></a></h1>
+        <box light="" seamless>
+          light and seamless
         </box>
-        <h2 id="positive-attributes-override-presence-of-negative">positive attributes override presence of negative<a class="fa fa-anchor" href="#positive-attributes-override-presence-of-negative"></a></h2>
-        <pre><code class="hljs"><span>&lt;box no-background background-color=&quot;yellow&quot;&gt;</span><span>    Lorem ipsum dolor sit amet,</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-border border-color=&quot;grey&quot;&gt;</span><span>    Lorem ipsum dolor sit amet,</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-border border-left-color=&quot;grey&quot;&gt;</span><span>    Lorem ipsum dolor sit amet,</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon icon=&quot;:fas-camera:&quot; &gt;</span><span>    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon type=&quot;info&quot; icon=&quot;:rocket:&quot;&gt;</span><span>    info</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon type=&quot;info&quot; icon=&quot;&quot;&gt;</span><span>    info</span><span>&lt;/box&gt;</span><span>&#x200B;</span></code></pre>
+        <h1 id="no-xx-and-xx-attributes">no-xx and xx attributes<a class="fa fa-anchor" href="#no-xx-and-xx-attributes"></a></h1>
         <box no-background="" background-color="yellow">
-          Lorem ipsum dolor sit amet,
+          no-background background-color="yellow"
         </box>
-        <box no-border="" border-color="grey">
-          Lorem ipsum dolor sit amet,
+        <box no-border="" border-color="grey" border-left-color="grey">
+          no-border border-color="grey"
         </box>
         <box no-border="" border-left-color="grey">
-          Lorem ipsum dolor sit amet,
+          no-border border-left-color="grey"
         </box>
-        <box no-icon=""><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <box no-icon=""><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> no-icon icon=":fas-camera:"
         </box>
-        <box no-icon="" type="info"><template slot="_icon">🚀</template> info
+        <box no-icon="" type="info"><template slot="_icon">🚀</template> no-icon type="info" icon=":rocket:"
         </box>
-        <box no-icon="" type="info"><template slot="_icon"></template> info
+        <box no-icon="" type="info"><template slot="_icon"></template> no-icon type="info" icon=""
         </box>
-        <h2 id="default-boxes">Default boxes<a class="fa fa-anchor" href="#default-boxes"></a></h2>
-        <box>
-          default
-        </box>
-        <box type="info">
-          info
-        </box>
-        <box type="warning">
-          warning
-        </box>
-        <box type="success">
-          success
-        </box>
-        <box type="important">
-          important
-        </box>
-        <box type="wrong">
-          wrong
-        </box>
-        <box type="tip">
-          tip
-        </box>
-        <box type="definition">
-          definition
-        </box>
-        <box type="info" dismissible="">
-          dismissible info
-        </box>
-        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box type="info" light="">
-          info light
-        </box>
-        <box type="warning" light="">
-          warning light
-        </box>
-        <box type="success" light="">
-          success light
-        </box>
-        <box type="important" light="">
-          important light
-        </box>
-        <box type="wrong" light="">
-          wrong light
-        </box>
-        <box type="tip" light="">
-          tip light
-        </box>
-        <box type="definition" light="">
-          definition light
-        </box>
-        <box seamless>
-          info seamless
-        </box>
-        <box type="info" seamless>
-          info seamless
-        </box>
-        <box type="warning" seamless>
-          warning seamless
-        </box>
-        <box type="success" seamless>
-          success seamless
-        </box>
-        <box type="important" seamless>
-          important seamless
-        </box>
-        <box type="wrong" seamless>
-          wrong seamless
-        </box>
-        <box type="tip" seamless>
-          tip seamless
-        </box>
-        <box type="definition" seamless>
-          definition seamless
-        </box>
-        <box background-color="white" border-color="grey" border-left-color="blue">
-          default, styled as empty box with blue left border
-        </box>
-        <box type="info"><template slot="_icon">🚀</template> info, with rocket icon
-        </box>
-        <box type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <h2 id="no-icon">no-icon<a class="fa fa-anchor" href="#no-icon"></a></h2>
-        <box no-icon="">
-          default
-        </box>
-        <box no-icon="" type="info">
-          info
-        </box>
-        <box no-icon="" type="warning">
-          warning
-        </box>
-        <box no-icon="" type="success">
-          success
-        </box>
-        <box no-icon="" type="important">
-          important
-        </box>
-        <box no-icon="" type="wrong">
-          wrong
-        </box>
-        <box no-icon="" type="tip">
-          tip
-        </box>
-        <box no-icon="" type="definition">
-          definition
-        </box>
-        <box no-icon="" type="info" dismissible="">
-          dismissible info
-        </box>
-        <box no-icon="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box no-icon="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box no-icon="" type="info" light="">
-          info light
-        </box>
-        <box no-icon="" type="warning" light="">
-          warning light
-        </box>
-        <box no-icon="" type="success" light="">
-          success light
-        </box>
-        <box no-icon="" type="important" light="">
-          important light
-        </box>
-        <box no-icon="" type="wrong" light="">
-          wrong light
-        </box>
-        <box no-icon="" type="tip" light="">
-          tip light
-        </box>
-        <box no-icon="" type="definition" light="">
-          definition light
-        </box>
-        <box no-icon="" seamless>
-          info seamless
-        </box>
-        <box no-icon="" type="info" seamless>
-          info seamless
-        </box>
-        <box no-icon="" type="warning" seamless>
-          warning seamless
-        </box>
-        <box no-icon="" type="success" seamless>
-          success seamless
-        </box>
-        <box no-icon="" type="important" seamless>
-          important seamless
-        </box>
-        <box no-icon="" type="wrong" seamless>
-          wrong seamless
-        </box>
-        <box no-icon="" type="tip" seamless>
-          tip seamless
-        </box>
-        <box no-icon="" type="definition" seamless>
-          definition seamless
-        </box>
-        <box no-icon="" background-color="white" border-color="grey" border-left-color="blue">
-          default, styled as empty box with blue left border
-        </box>
-        <box no-icon="" type="info"><template slot="_icon">🚀</template> info, with rocket icon
-        </box>
-        <box no-icon="" type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-icon="" type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-icon="" type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <h2 id="no-background">no-background<a class="fa fa-anchor" href="#no-background"></a></h2>
-        <box no-background="">
-          default
-        </box>
-        <box no-background="" type="info">
-          info
-        </box>
-        <box no-background="" type="warning">
-          warning
-        </box>
-        <box no-background="" type="success">
-          success
-        </box>
-        <box no-background="" type="important">
-          important
-        </box>
-        <box no-background="" type="wrong">
-          wrong
-        </box>
-        <box no-background="" type="tip">
-          tip
-        </box>
-        <box no-background="" type="definition">
-          definition
-        </box>
-        <box no-background="" type="info" dismissible="">
-          dismissible info
-        </box>
-        <box no-background="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box no-background="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box no-background="" type="info" light="">
-          info light
-        </box>
-        <box no-background="" type="warning" light="">
-          warning light
-        </box>
-        <box no-background="" type="success" light="">
-          success light
-        </box>
-        <box no-background="" type="important" light="">
-          important light
-        </box>
-        <box no-background="" type="wrong" light="">
-          wrong light
-        </box>
-        <box no-background="" type="tip" light="">
-          tip light
-        </box>
-        <box no-background="" type="definition" light="">
-          definition light
-        </box>
+        <h1 id="no-background-border-and-seamless-option">no-background/border and seamless option<a class="fa fa-anchor" href="#no-background-border-and-seamless-option"></a></h1>
         <box no-background="" seamless>
-          info seamless
-        </box>
-        <box no-background="" type="info" seamless>
-          info seamless
-        </box>
-        <box no-background="" type="warning" seamless>
-          warning seamless
-        </box>
-        <box no-background="" type="success" seamless>
-          success seamless
-        </box>
-        <box no-background="" type="important" seamless>
-          important seamless
-        </box>
-        <box no-background="" type="wrong" seamless>
-          wrong seamless
-        </box>
-        <box no-background="" type="tip" seamless>
-          tip seamless
-        </box>
-        <box no-background="" type="definition" seamless>
-          definition seamless
-        </box>
-        <box no-background="" background-color="white" border-color="grey" border-left-color="blue">
-          default, styled as empty box with blue left border
-        </box>
-        <box no-background="" type="info"><template slot="_icon">🚀</template> info, with rocket icon
-        </box>
-        <box no-background="" type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-background="" type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-background="" type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <h2 id="no-border">no-border<a class="fa fa-anchor" href="#no-border"></a></h2>
-        <box no-border="">
-          default
-        </box>
-        <box no-border="" type="info">
-          info
-        </box>
-        <box no-border="" type="warning">
-          warning
-        </box>
-        <box no-border="" type="success">
-          success
-        </box>
-        <box no-border="" type="important">
-          important
-        </box>
-        <box no-border="" type="wrong">
-          wrong
-        </box>
-        <box no-border="" type="tip">
-          tip
-        </box>
-        <box no-border="" type="definition">
-          definition
-        </box>
-        <box no-border="" type="info" dismissible="">
-          dismissible info
-        </box>
-        <box no-border="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box no-border="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box no-border="" type="info" light="">
-          info light
-        </box>
-        <box no-border="" type="warning" light="">
-          warning light
-        </box>
-        <box no-border="" type="success" light="">
-          success light
-        </box>
-        <box no-border="" type="important" light="">
-          important light
-        </box>
-        <box no-border="" type="wrong" light="">
-          wrong light
-        </box>
-        <box no-border="" type="tip" light="">
-          tip light
-        </box>
-        <box no-border="" type="definition" light="">
-          definition light
+          no-background seamless
         </box>
         <box no-border="" seamless>
-          info seamless
-        </box>
-        <box no-border="" type="info" seamless>
-          info seamless
-        </box>
-        <box no-border="" type="warning" seamless>
-          warning seamless
-        </box>
-        <box no-border="" type="success" seamless>
-          success seamless
-        </box>
-        <box no-border="" type="important" seamless>
-          important seamless
-        </box>
-        <box no-border="" type="wrong" seamless>
-          wrong seamless
-        </box>
-        <box no-border="" type="tip" seamless>
-          tip seamless
-        </box>
-        <box no-border="" type="definition" seamless>
-          definition seamless
-        </box>
-        <box no-border="" background-color="white" border-color="grey" border-left-color="blue">
-          default, styled as empty box with blue left border
-        </box>
-        <box no-border="" type="info"><template slot="_icon">🚀</template> info, with rocket icon
-        </box>
-        <box no-border="" type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-border="" type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-border="" type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <h2 id="no-background-no-border">no-background no-border<a class="fa fa-anchor" href="#no-background-no-border"></a></h2>
-        <box no-background="" no-border="">
-          default
-        </box>
-        <box no-background="" no-border="" type="info">
-          info
-        </box>
-        <box no-background="" no-border="" type="warning">
-          warning
-        </box>
-        <box no-background="" no-border="" type="success">
-          success
-        </box>
-        <box no-background="" no-border="" type="important">
-          important
-        </box>
-        <box no-background="" no-border="" type="wrong">
-          wrong
-        </box>
-        <box no-background="" no-border="" type="tip">
-          tip
-        </box>
-        <box no-background="" no-border="" type="definition">
-          definition
-        </box>
-        <box no-background="" no-border="" type="info" dismissible="">
-          dismissible info
-        </box>
-        <box no-background="" no-border="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box no-background="" no-border="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box no-background="" no-border="" type="info" light="">
-          info light
-        </box>
-        <box no-background="" no-border="" type="warning" light="">
-          warning light
-        </box>
-        <box no-background="" no-border="" type="success" light="">
-          success light
-        </box>
-        <box no-background="" no-border="" type="important" light="">
-          important light
-        </box>
-        <box no-background="" no-border="" type="wrong" light="">
-          wrong light
-        </box>
-        <box no-background="" no-border="" type="tip" light="">
-          tip light
-        </box>
-        <box no-background="" no-border="" type="definition" light="">
-          definition light
-        </box>
-        <box no-background="" no-border="" seamless>
-          info seamless
-        </box>
-        <box no-background="" no-border="" type="info" seamless>
-          info seamless
-        </box>
-        <box no-background="" no-border="" type="warning" seamless>
-          warning seamless
-        </box>
-        <box no-background="" no-border="" type="success" seamless>
-          success seamless
-        </box>
-        <box no-background="" no-border="" type="important" seamless>
-          important seamless
-        </box>
-        <box no-background="" no-border="" type="wrong" seamless>
-          wrong seamless
-        </box>
-        <box no-background="" no-border="" type="tip" seamless>
-          tip seamless
-        </box>
-        <box no-background="" no-border="" type="definition" seamless>
-          definition seamless
-        </box>
-        <box no-background="" no-border="" background-color="white" border-color="grey" border-left-color="blue">
-          default, styled as empty box with blue left border
-        </box>
-        <box no-background="" no-border="" type="info"><template slot="_icon">🚀</template> info, with rocket icon
-        </box>
-        <box no-background="" no-border="" type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-background="" no-border="" type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-background="" no-border="" type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <h2 id="no-background-no-icon">no-background no-icon<a class="fa fa-anchor" href="#no-background-no-icon"></a></h2>
-        <box no-background="" no-icon="">
-          default
-        </box>
-        <box no-background="" no-icon="" type="info">
-          info
-        </box>
-        <box no-background="" no-icon="" type="warning">
-          warning
-        </box>
-        <box no-background="" no-icon="" type="success">
-          success
-        </box>
-        <box no-background="" no-icon="" type="important">
-          important
-        </box>
-        <box no-background="" no-icon="" type="wrong">
-          wrong
-        </box>
-        <box no-background="" no-icon="" type="tip">
-          tip
-        </box>
-        <box no-background="" no-icon="" type="definition">
-          definition
-        </box>
-        <box no-background="" no-icon="" type="info" dismissible="">
-          dismissible info
-        </box>
-        <box no-background="" no-icon="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box no-background="" no-icon="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box no-background="" no-icon="" type="info" light="">
-          info light
-        </box>
-        <box no-background="" no-icon="" type="warning" light="">
-          warning light
-        </box>
-        <box no-background="" no-icon="" type="success" light="">
-          success light
-        </box>
-        <box no-background="" no-icon="" type="important" light="">
-          important light
-        </box>
-        <box no-background="" no-icon="" type="wrong" light="">
-          wrong light
-        </box>
-        <box no-background="" no-icon="" type="tip" light="">
-          tip light
-        </box>
-        <box no-background="" no-icon="" type="definition" light="">
-          definition light
-        </box>
-        <box no-background="" no-icon="" seamless>
-          info seamless
-        </box>
-        <box no-background="" no-icon="" type="info" seamless>
-          info seamless
-        </box>
-        <box no-background="" no-icon="" type="warning" seamless>
-          warning seamless
-        </box>
-        <box no-background="" no-icon="" type="success" seamless>
-          success seamless
-        </box>
-        <box no-background="" no-icon="" type="important" seamless>
-          important seamless
-        </box>
-        <box no-background="" no-icon="" type="wrong" seamless>
-          wrong seamless
-        </box>
-        <box no-background="" no-icon="" type="tip" seamless>
-          tip seamless
-        </box>
-        <box no-background="" no-icon="" type="definition" seamless>
-          definition seamless
-        </box>
-        <box no-background="" no-icon="" background-color="white" border-color="grey" border-left-color="blue">
-          default, styled as empty box with blue left border
-        </box>
-        <box no-background="" no-icon="" type="info"><template slot="_icon">🚀</template> info, with rocket icon
-        </box>
-        <box no-background="" no-icon="" type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-background="" no-icon="" type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-background="" no-icon="" type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <h2 id="no-icon-no-border">no-icon no-border<a class="fa fa-anchor" href="#no-icon-no-border"></a></h2>
-        <box no-icon="" no-border="">
-          default
-        </box>
-        <box no-icon="" no-border="" type="info">
-          info
-        </box>
-        <box no-icon="" no-border="" type="warning">
-          warning
-        </box>
-        <box no-icon="" no-border="" type="success">
-          success
-        </box>
-        <box no-icon="" no-border="" type="important">
-          important
-        </box>
-        <box no-icon="" no-border="" type="wrong">
-          wrong
-        </box>
-        <box no-icon="" no-border="" type="tip">
-          tip
-        </box>
-        <box no-icon="" no-border="" type="definition">
-          definition
-        </box>
-        <box no-icon="" no-border="" type="info" dismissible="">
-          dismissible info
-        </box>
-        <box no-icon="" no-border="" type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box type="success"><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-          <box no-icon="" no-border="" type="warning" dismissible=""><template slot="_header"><p>Tip box header</p></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </box>
-        </box>
-        <box no-icon="" no-border="" type="info" light="">
-          info light
-        </box>
-        <box no-icon="" no-border="" type="warning" light="">
-          warning light
-        </box>
-        <box no-icon="" no-border="" type="success" light="">
-          success light
-        </box>
-        <box no-icon="" no-border="" type="important" light="">
-          important light
-        </box>
-        <box no-icon="" no-border="" type="wrong" light="">
-          wrong light
-        </box>
-        <box no-icon="" no-border="" type="tip" light="">
-          tip light
-        </box>
-        <box no-icon="" no-border="" type="definition" light="">
-          definition light
-        </box>
-        <box no-icon="" no-border="" seamless>
-          info seamless
-        </box>
-        <box no-icon="" no-border="" type="info" seamless>
-          info seamless
-        </box>
-        <box no-icon="" no-border="" type="warning" seamless>
-          warning seamless
-        </box>
-        <box no-icon="" no-border="" type="success" seamless>
-          success seamless
-        </box>
-        <box no-icon="" no-border="" type="important" seamless>
-          important seamless
-        </box>
-        <box no-icon="" no-border="" type="wrong" seamless>
-          wrong seamless
-        </box>
-        <box no-icon="" no-border="" type="tip" seamless>
-          tip seamless
-        </box>
-        <box no-icon="" no-border="" type="definition" seamless>
-          definition seamless
-        </box>
-        <box no-icon="" no-border="" background-color="white" border-color="grey" border-left-color="blue">
-          default, styled as empty box with blue left border
-        </box>
-        <box no-icon="" no-border="" type="info"><template slot="_icon">🚀</template> info, with rocket icon
-        </box>
-        <box no-icon="" no-border="" type="warning"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-icon="" no-border="" type="warning" icon-size="2x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
-        <box no-icon="" no-border="" type="warning" icon-size="3x"><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </box>
+          no-border seamless
+        </box>
+        <box><template slot="_header"><p>heading is deprecated</p></template> Please use header
+        </box>
+        <popover effect="fade" placement="top"><template slot="header">Title is deprecated</template><template slot="content">Please use header</template>
+          <button class="btn btn-secondary">Popover on top</button></popover>
+        <br>
+        <br>
+        <br>
+        <div class="temp-dropdown-placeholder">*Action*</div>
+        <dropdown type="primary" class="temp-dropdown"><template slot="_header"><em>Action</em></template>
+          <li><a href="#dropdown" class="dropdown-item">Action</a></li>
+          <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
+          <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
+          <li role="separator" class="dropdown-divider"></li>
+          <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
+        </dropdown>
+        <br>
+        <p>More about
+          <trigger for="modal:loremipsum">trigger</trigger>.
+          <modal id="modal:loremipsum"><template slot="_header">title is deprecated. 🚀</template> Please use header
+          </modal>
+          <br>
+          <br>
+          <trigger for="modal:tip-example" trigger="click">Click here to show Modal.</trigger>
+        </p>
+        <modal id="modal:tip-example">
+          <div slot="header" class="modal-title text-center">
+            <span style="font-size:20pt"><span style="color:red;">BIG</span> header</span>
+          </div>
+          Modal allows you to style both header and footer individually, with style classes and inline styles.
+          <div slot="footer" class="text-center">
+            <span style="font-size:10pt">Tiny <span style="color:green;">footer</span></span>
+          </div>
+        </modal>
+        <br>
+        <br>
+        <h1 id="a-normal-dropdwon">A normal dropdwon<a class="fa fa-anchor" href="#a-normal-dropdwon"></a></h1>
+        <div class="temp-dropdown-placeholder">*Action*</div>
+        <dropdown type="primary" class="temp-dropdown"><template slot="_header"><em>Action</em></template>
+          <li><a href="#dropdown" class="dropdown-item">Action</a></li>
+          <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
+          <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
+          <li role="separator" class="dropdown-divider"></li>
+          <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
+        </dropdown>
+        <h1 id="dropdown-with-header-slot-header-attribute-has-no-effect">Dropdown with header slot. header attribute has no effect<a class="fa fa-anchor" href="#dropdown-with-header-slot-header-attribute-has-no-effect"></a></h1>
+        <div class="temp-dropdown-placeholder">no use</div>
+        <dropdown type="primary" class="temp-dropdown">
+          <div slot="header">Render seems bugged, raise issue?</div>
+          <li><a href="#dropdown" class="dropdown-item">Action</a></li>
+          <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
+          <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
+          <li role="separator" class="dropdown-divider"></li>
+          <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
+        </dropdown>
+        <h1 id="dropdown-with-header-slot-text-attribute-has-no-effect">Dropdown with header slot. text attribute has no effect<a class="fa fa-anchor" href="#dropdown-with-header-slot-text-attribute-has-no-effect"></a></h1>
+        <div class="temp-dropdown-placeholder">no use</div>
+        <dropdown type="primary" class="temp-dropdown">
+          <div slot="header">Render seems bugged, raise issue?</div>
+          <li><a href="#dropdown" class="dropdown-item">Action</a></li>
+          <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
+          <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
+          <li role="separator" class="dropdown-divider"></li>
+          <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
+        </dropdown>
+        <h1 id="dropdown-with-both-text-and-header-attribute">Dropdown with both text and header attribute.<a class="fa fa-anchor" href="#dropdown-with-both-text-and-header-attribute"></a></h1>
+        <div class="temp-dropdown-placeholder">Header has higher priority</div>
+        <dropdown type="primary" class="temp-dropdown"><template slot="_header">Header has higher priority</template>
+          <li><a href="#dropdown" class="dropdown-item">Action</a></li>
+          <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
+          <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
+          <li role="separator" class="dropdown-divider"></li>
+          <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
+        </dropdown>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 id="markbind-code">Markbind code<a class="fa fa-anchor" href="#markbind-code"></a></h1>
+        <pre><code class="hljs"><span>&lt;frontmatter&gt;</span><span>  header: header.md</span><span>  pageNav: 2</span><span>  pageNavTitle: &quot;Chapters of This Page&quot;</span><span>  siteNav: site-nav.md</span><span>&lt;/frontmatter&gt;</span><span>&#x200B;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span> </span><span># Light cannot be used with seamless</span><span>&#x200B;</span><span>&lt;box light seamless&gt;</span><span>    light and seamless</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span># no-xx and xx attributes</span><span>&#x200B;</span><span>&lt;box no-background background-color=&quot;yellow&quot;&gt;</span><span>    no-background background-color=&quot;yellow&quot;</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-border border-color=&quot;grey&quot; border-left-color=&quot;grey&quot;&gt;</span><span>    no-border border-color=&quot;grey&quot;</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-border border-left-color=&quot;grey&quot;&gt;</span><span>    no-border border-left-color=&quot;grey&quot;</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon icon=&quot;:fas-camera:&quot; &gt;</span><span>    no-icon icon=&quot;:fas-camera:&quot; </span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon type=&quot;info&quot; icon=&quot;:rocket:&quot;&gt;</span><span>    no-icon type=&quot;info&quot; icon=&quot;:rocket:&quot;</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon type=&quot;info&quot; icon=&quot;&quot;&gt;</span><span>    no-icon type=&quot;info&quot; icon=&quot;&quot;</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span># no-background/border and seamless option</span><span>&lt;box no-background seamless&gt;</span><span>    no-background seamless</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-border seamless&gt;</span><span>    no-border seamless</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box heading=&quot;heading is deprecated&quot;&gt;</span><span>    Please use header</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;popover effect=&quot;fade&quot; title=&quot;Title is deprecated&quot; content=&quot;Please use header&quot; placement=&quot;top&quot;&gt;</span><span>  &lt;button class=&quot;btn btn-secondary&quot;&gt;Popover on top&lt;/button&gt;</span><span>&lt;/popover&gt;</span><span>&#x200B;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&#x200B;</span><span>&lt;dropdown text=&quot;*Action*&quot; type=&quot;primary&quot;&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;</span><span>&lt;/dropdown&gt;</span><span>&#x200B;</span><span>&lt;br&gt;</span><span>&#x200B;</span><span>More about &lt;trigger for=&quot;modal:loremipsum&quot;&gt;trigger&lt;/trigger&gt;.</span><span>&lt;modal title=&quot;title is deprecated. :rocket:&quot; id=&quot;modal:loremipsum&quot;&gt;</span><span>    Please use header</span><span>&lt;/modal&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&lt;trigger for=&quot;modal:tip-example&quot; trigger=&quot;click&quot;&gt;Click here to show Modal.&lt;/trigger&gt;</span><span>&#x200B;</span><span>&lt;modal id=&quot;modal:tip-example&quot;&gt;</span><span>  &lt;div slot=&quot;modal-header&quot; class=&quot;modal-title text-center&quot;&gt;</span><span>    &lt;span style=&quot;font-size:20pt&quot;&gt;&lt;span style=&quot;color:red;&quot;&gt;BIG&lt;/span&gt; header&lt;/span&gt;</span><span>  &lt;/div&gt;</span><span>    Modal allows you to style both header and footer individually, with style classes and inline styles.</span><span>  &lt;div slot=&quot;modal-footer&quot; class=&quot;text-center&quot;&gt;</span><span>    &lt;span style=&quot;font-size:10pt&quot;&gt;Tiny &lt;span style=&quot;color:green;&quot;&gt;footer&lt;/span&gt;&lt;/span&gt;</span><span>  &lt;/div&gt;</span><span>&lt;/modal&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&#x200B;</span><span># A normal dropdwon</span><span>&#x200B;</span><span>&lt;dropdown header=&quot;*Action*&quot; type=&quot;primary&quot;&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;</span><span>&lt;/dropdown&gt;</span><span>&#x200B;</span><span># Dropdown with header slot. header attribute has no effect</span><span>&#x200B;</span><span>&lt;dropdown header=&quot;no use&quot; type=&quot;primary&quot;&gt;</span><span>  &lt;div slot=&quot;header&quot;&gt;Render seems bugged, raise issue?&lt;/div&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;</span><span>&lt;/dropdown&gt;</span><span>&#x200B;</span><span># Dropdown with header slot. text attribute has no effect</span><span>&#x200B;</span><span>&lt;dropdown text=&quot;no use&quot; type=&quot;primary&quot;&gt;</span><span>  &lt;div slot=&quot;header&quot;&gt;Render seems bugged, raise issue?&lt;/div&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;</span><span>&lt;/dropdown&gt;</span><span>&#x200B;</span><span># Dropdown with both text and header attribute.</span><span>&#x200B;</span><span>&lt;dropdown header=&quot;Header has higher priority&quot; text=&quot;over text&quot; type=&quot;primary&quot;&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;</span><span>&lt;/dropdown&gt;</span><span>&#x200B;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span></code></pre>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
           <a class="navbar-brand page-nav-title" href="#">Chapters of This Page</a>
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#testing-no-icon-no-background-no-border">Testing no-icon, no-background, no-border&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#default-box-has-icon">default box has icon&#x200E;</a>
-              <a class="nav-link py-1" href="#positive-attributes-override-presence-of-negative">positive attributes override presence of negative&#x200E;</a>
-              <a class="nav-link py-1" href="#default-boxes">Default boxes&#x200E;</a>
-              <a class="nav-link py-1" href="#no-icon">no-icon&#x200E;</a>
-              <a class="nav-link py-1" href="#no-background">no-background&#x200E;</a>
-              <a class="nav-link py-1" href="#no-border">no-border&#x200E;</a>
-              <a class="nav-link py-1" href="#no-background-no-border">no-background no-border&#x200E;</a>
-              <a class="nav-link py-1" href="#no-background-no-icon">no-background no-icon&#x200E;</a>
-              <a class="nav-link py-1" href="#no-icon-no-border">no-icon no-border&#x200E;</a>
-            </nav>
+            <a class="nav-link py-1" href="#light-cannot-be-used-with-seamless">Light cannot be used with seamless&#x200E;</a>
+            <a class="nav-link py-1" href="#no-xx-and-xx-attributes">no-xx and xx attributes&#x200E;</a>
+            <a class="nav-link py-1" href="#no-background-border-and-seamless-option">no-background/border and seamless option&#x200E;</a>
+            <a class="nav-link py-1" href="#a-normal-dropdwon">A normal dropdwon&#x200E;</a>
+            <a class="nav-link py-1" href="#dropdown-with-header-slot-header-attribute-has-no-effect">Dropdown with header slot. header attribute has no effect&#x200E;</a>
+            <a class="nav-link py-1" href="#dropdown-with-header-slot-text-attribute-has-no-effect">Dropdown with header slot. text attribute has no effect&#x200E;</a>
+            <a class="nav-link py-1" href="#dropdown-with-both-text-and-header-attribute">Dropdown with both text and header attribute.&#x200E;</a>
+            <a class="nav-link py-1" href="#markbind-code">Markbind code&#x200E;</a>
 
           </nav>
         </div>
