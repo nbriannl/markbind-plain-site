@@ -1,3 +1,5 @@
 _site/*
 
 _markbind/*
+_markbind/logs/*.json
+_markbind/logs/*.log
