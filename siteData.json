@@ -9,7 +9,9 @@
       "src": "index.md",
       "title": "Landing Page",
       "layout": "default",
-      "headings": {},
+      "headings": {
+        "equivalent-code": "Equivalent code"
+      },
       "headingKeywords": {}
     },
     {
