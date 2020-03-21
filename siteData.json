@@ -9,16 +9,7 @@
       "src": "index.md",
       "title": "Landing Page",
       "layout": "default",
-      "headings": {
-        "light-cannot-be-used-with-seamless": "Light cannot be used with seamless",
-        "no-xx-and-xx-attributes": "no-xx and xx attributes",
-        "no-background-border-and-seamless-option": "no-background/border and seamless option",
-        "a-normal-dropdwon": "A normal dropdwon",
-        "dropdown-with-header-slot-header-attribute-has-no-effect": "Dropdown with header slot. header attribute has no effect",
-        "dropdown-with-header-slot-text-attribute-has-no-effect": "Dropdown with header slot. text attribute has no effect",
-        "dropdown-with-both-text-and-header-attribute": "Dropdown with both text and header attribute.",
-        "markbind-code": "Markbind code"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
@@ -27,7 +18,9 @@
       "src": "contents/topic1.md",
       "title": "",
       "layout": "default",
-      "headings": {},
+      "headings": {
+        "topic-1": "Topic 1"
+      },
       "headingKeywords": {}
     },
     {

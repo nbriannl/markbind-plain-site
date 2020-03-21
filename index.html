@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Landing Page</title>
   <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
@@ -44,7 +44,7 @@
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
           <ul class="px-0 site-nav-list">
             <li class="mt-2"><a href="/index.html" class="site-nav__a current">Home 🏠</a></li>
-            <li class="mt-2"><a href="/contents/topic1.html" class="site-nav__a">Enhance box component heading #118</a></li>
+            <li class="mt-2"><a href="/contents/topic1.html" class="site-nav__a">Topic 1</a></li>
             <li class="mt-2"><a href="/contents/topic2.html" class="site-nav__a">Topic 2</a></li>
             <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Topic 3 
  <i class="dropdown-btn-icon rotate-icon">
@@ -61,127 +61,59 @@
       </nav>
       <div id="content-wrapper">
         <br>
-        <br>
-        <h1 id="light-cannot-be-used-with-seamless">Light cannot be used with seamless<a class="fa fa-anchor" href="#light-cannot-be-used-with-seamless"></a></h1>
-        <box light="" seamless>
-          light and seamless
-        </box>
-        <h1 id="no-xx-and-xx-attributes">no-xx and xx attributes<a class="fa fa-anchor" href="#no-xx-and-xx-attributes"></a></h1>
-        <box no-background="" background-color="yellow">
-          no-background background-color="yellow"
-        </box>
-        <box no-border="" border-color="grey" border-left-color="grey">
-          no-border border-color="grey"
-        </box>
-        <box no-border="" border-left-color="grey">
-          no-border border-left-color="grey"
-        </box>
-        <box no-icon=""><template slot="_icon"><span aria-hidden="true" class="fas fa-camera"></span></template> no-icon icon=":fas-camera:"
-        </box>
-        <box no-icon="" type="info"><template slot="_icon">🚀</template> no-icon type="info" icon=":rocket:"
-        </box>
-        <box no-icon="" type="info"><template slot="_icon"></template> no-icon type="info" icon=""
-        </box>
-        <h1 id="no-background-border-and-seamless-option">no-background/border and seamless option<a class="fa fa-anchor" href="#no-background-border-and-seamless-option"></a></h1>
-        <box no-background="" seamless>
-          no-background seamless
-        </box>
-        <box no-border="" seamless>
-          no-border seamless
-        </box>
-        <box><template slot="_header"><p>heading is deprecated</p></template> Please use header
-        </box>
-        <popover effect="fade" placement="top"><template slot="header">Title is deprecated</template><template slot="content">Please use header</template>
-          <button class="btn btn-secondary">Popover on top</button></popover>
-        <br>
-        <br>
-        <br>
-        <div class="temp-dropdown-placeholder">*Action*</div>
-        <dropdown type="primary" class="temp-dropdown"><template slot="_header"><em>Action</em></template>
-          <li><a href="#dropdown" class="dropdown-item">Action</a></li>
-          <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
-          <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
-          <li role="separator" class="dropdown-divider"></li>
-          <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
-        </dropdown>
-        <br>
-        <p>More about
-          <trigger for="modal:loremipsum">trigger</trigger>.
-          <modal id="modal:loremipsum"><template slot="_header">title is deprecated. 🚀</template> Please use header
-          </modal>
-          <br>
-          <br>
-          <trigger for="modal:tip-example" trigger="click">Click here to show Modal.</trigger>
-        </p>
-        <modal id="modal:tip-example">
-          <div slot="header" class="modal-title text-center">
-            <span style="font-size:20pt"><span style="color:red;">BIG</span> header</span>
+        <div class="code-block">
+          <div class="code-block-heading"><span>### Heading level 3</span></div>
+          <div class="code-block-content">
+            <pre><code heading="### Heading level 3" class="hljs html"><span><span class="hljs-tag">&lt;<span class="hljs-name">foo</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">foo</span>&gt;</span></span></code></pre>
           </div>
-          Modal allows you to style both header and footer individually, with style classes and inline styles.
-          <div slot="footer" class="text-center">
-            <span style="font-size:10pt">Tiny <span style="color:green;">footer</span></span>
+        </div>
+        <div class="code-block">
+          <div class="code-block-heading"><span>Line breaks<br>Are possible<br><a href="https://markbind.org">And links!</a></span></div>
+          <div class="code-block-content">
+            <pre><code heading="Line breaks&lt;br&gt;Are possible&lt;br&gt;[And links!](https://markbind.org)" class="hljs html"><span><span class="hljs-tag">&lt;<span class="hljs-name">foo</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">foo</span>&gt;</span></span></code></pre>
           </div>
-        </modal>
-        <br>
-        <br>
-        <h1 id="a-normal-dropdwon">A normal dropdwon<a class="fa fa-anchor" href="#a-normal-dropdwon"></a></h1>
-        <div class="temp-dropdown-placeholder">*Action*</div>
-        <dropdown type="primary" class="temp-dropdown"><template slot="_header"><em>Action</em></template>
-          <li><a href="#dropdown" class="dropdown-item">Action</a></li>
-          <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
-          <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
-          <li role="separator" class="dropdown-divider"></li>
-          <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
-        </dropdown>
-        <h1 id="dropdown-with-header-slot-header-attribute-has-no-effect">Dropdown with header slot. header attribute has no effect<a class="fa fa-anchor" href="#dropdown-with-header-slot-header-attribute-has-no-effect"></a></h1>
-        <div class="temp-dropdown-placeholder">no use</div>
-        <dropdown type="primary" class="temp-dropdown">
-          <div slot="header">Render seems bugged, raise issue?</div>
-          <li><a href="#dropdown" class="dropdown-item">Action</a></li>
-          <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
-          <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
-          <li role="separator" class="dropdown-divider"></li>
-          <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
-        </dropdown>
-        <h1 id="dropdown-with-header-slot-text-attribute-has-no-effect">Dropdown with header slot. text attribute has no effect<a class="fa fa-anchor" href="#dropdown-with-header-slot-text-attribute-has-no-effect"></a></h1>
-        <div class="temp-dropdown-placeholder">no use</div>
-        <dropdown type="primary" class="temp-dropdown">
-          <div slot="header">Render seems bugged, raise issue?</div>
-          <li><a href="#dropdown" class="dropdown-item">Action</a></li>
-          <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
-          <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
-          <li role="separator" class="dropdown-divider"></li>
-          <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
-        </dropdown>
-        <h1 id="dropdown-with-both-text-and-header-attribute">Dropdown with both text and header attribute.<a class="fa fa-anchor" href="#dropdown-with-both-text-and-header-attribute"></a></h1>
-        <div class="temp-dropdown-placeholder">Header has higher priority</div>
-        <dropdown type="primary" class="temp-dropdown"><template slot="_header">Header has higher priority</template>
-          <li><a href="#dropdown" class="dropdown-item">Action</a></li>
-          <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
-          <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
-          <li role="separator" class="dropdown-divider"></li>
-          <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
-        </dropdown>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1 id="markbind-code">Markbind code<a class="fa fa-anchor" href="#markbind-code"></a></h1>
-        <pre><code class="hljs"><span>&lt;frontmatter&gt;</span><span>  header: header.md</span><span>  pageNav: 2</span><span>  pageNavTitle: &quot;Chapters of This Page&quot;</span><span>  siteNav: site-nav.md</span><span>&lt;/frontmatter&gt;</span><span>&#x200B;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span> </span><span># Light cannot be used with seamless</span><span>&#x200B;</span><span>&lt;box light seamless&gt;</span><span>    light and seamless</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span># no-xx and xx attributes</span><span>&#x200B;</span><span>&lt;box no-background background-color=&quot;yellow&quot;&gt;</span><span>    no-background background-color=&quot;yellow&quot;</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-border border-color=&quot;grey&quot; border-left-color=&quot;grey&quot;&gt;</span><span>    no-border border-color=&quot;grey&quot;</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-border border-left-color=&quot;grey&quot;&gt;</span><span>    no-border border-left-color=&quot;grey&quot;</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon icon=&quot;:fas-camera:&quot; &gt;</span><span>    no-icon icon=&quot;:fas-camera:&quot; </span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon type=&quot;info&quot; icon=&quot;:rocket:&quot;&gt;</span><span>    no-icon type=&quot;info&quot; icon=&quot;:rocket:&quot;</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-icon type=&quot;info&quot; icon=&quot;&quot;&gt;</span><span>    no-icon type=&quot;info&quot; icon=&quot;&quot;</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span># no-background/border and seamless option</span><span>&lt;box no-background seamless&gt;</span><span>    no-background seamless</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box no-border seamless&gt;</span><span>    no-border seamless</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;box heading=&quot;heading is deprecated&quot;&gt;</span><span>    Please use header</span><span>&lt;/box&gt;</span><span>&#x200B;</span><span>&lt;popover effect=&quot;fade&quot; title=&quot;Title is deprecated&quot; content=&quot;Please use header&quot; placement=&quot;top&quot;&gt;</span><span>  &lt;button class=&quot;btn btn-secondary&quot;&gt;Popover on top&lt;/button&gt;</span><span>&lt;/popover&gt;</span><span>&#x200B;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&#x200B;</span><span>&lt;dropdown text=&quot;*Action*&quot; type=&quot;primary&quot;&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;</span><span>&lt;/dropdown&gt;</span><span>&#x200B;</span><span>&lt;br&gt;</span><span>&#x200B;</span><span>More about &lt;trigger for=&quot;modal:loremipsum&quot;&gt;trigger&lt;/trigger&gt;.</span><span>&lt;modal title=&quot;title is deprecated. :rocket:&quot; id=&quot;modal:loremipsum&quot;&gt;</span><span>    Please use header</span><span>&lt;/modal&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&lt;trigger for=&quot;modal:tip-example&quot; trigger=&quot;click&quot;&gt;Click here to show Modal.&lt;/trigger&gt;</span><span>&#x200B;</span><span>&lt;modal id=&quot;modal:tip-example&quot;&gt;</span><span>  &lt;div slot=&quot;modal-header&quot; class=&quot;modal-title text-center&quot;&gt;</span><span>    &lt;span style=&quot;font-size:20pt&quot;&gt;&lt;span style=&quot;color:red;&quot;&gt;BIG&lt;/span&gt; header&lt;/span&gt;</span><span>  &lt;/div&gt;</span><span>    Modal allows you to style both header and footer individually, with style classes and inline styles.</span><span>  &lt;div slot=&quot;modal-footer&quot; class=&quot;text-center&quot;&gt;</span><span>    &lt;span style=&quot;font-size:10pt&quot;&gt;Tiny &lt;span style=&quot;color:green;&quot;&gt;footer&lt;/span&gt;&lt;/span&gt;</span><span>  &lt;/div&gt;</span><span>&lt;/modal&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&#x200B;</span><span># A normal dropdwon</span><span>&#x200B;</span><span>&lt;dropdown header=&quot;*Action*&quot; type=&quot;primary&quot;&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;</span><span>&lt;/dropdown&gt;</span><span>&#x200B;</span><span># Dropdown with header slot. header attribute has no effect</span><span>&#x200B;</span><span>&lt;dropdown header=&quot;no use&quot; type=&quot;primary&quot;&gt;</span><span>  &lt;div slot=&quot;header&quot;&gt;Render seems bugged, raise issue?&lt;/div&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;</span><span>&lt;/dropdown&gt;</span><span>&#x200B;</span><span># Dropdown with header slot. text attribute has no effect</span><span>&#x200B;</span><span>&lt;dropdown text=&quot;no use&quot; type=&quot;primary&quot;&gt;</span><span>  &lt;div slot=&quot;header&quot;&gt;Render seems bugged, raise issue?&lt;/div&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;</span><span>&lt;/dropdown&gt;</span><span>&#x200B;</span><span># Dropdown with both text and header attribute.</span><span>&#x200B;</span><span>&lt;dropdown header=&quot;Header has higher priority&quot; text=&quot;over text&quot; type=&quot;primary&quot;&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;</span><span>  &lt;li role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;</span><span>  &lt;li&gt;&lt;a href=&quot;#dropdown&quot; class=&quot;dropdown-item&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;</span><span>&lt;/dropdown&gt;</span><span>&#x200B;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span><span>&lt;br&gt;</span></code></pre>
+        </div>
+        <div class="code-block">
+          <div class="code-block-heading"><span><strong>Bold</strong>, <em>Italic</em>, <em><strong>Bold and Italic</strong></em>, <s>Strike through</s>, 👍 ❗️ ❌ 🚧</span></div>
+          <div class="code-block-content">
+            <pre><code heading="**Bold**, _Italic_, ___Bold and Italic___, ~~Strike through~~, :+1: :exclamation: :x: :construction:" class="hljs html"><span><span class="hljs-tag">&lt;<span class="hljs-name">foo</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">foo</span>&gt;</span></span></code></pre>
+          </div>
+        </div>
+        <div class="code-block">
+          <div class="code-block-heading"><span><strong><strong>Super Bold</strong></strong>, <ins>Underline</ins>, <mark>Highlight</mark>, <span class="dimmed">Dim</span></span>
+          </div>
+          <div class="code-block-content">
+            <pre><code heading="****Super Bold****, ++Underline++, ==Highlight==, %%Dim%%" class="hljs html"><span><span class="hljs-tag">&lt;<span class="hljs-name">foo</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">foo</span>&gt;</span></span></code></pre>
+          </div>
+        </div>
+        <div class="code-block">
+          <div class="code-block-heading"><span><blockquote>Using blockquote tag</blockquote></span></div>
+          <div class="code-block-content">
+            <pre><code heading="&lt;blockquote&gt;Using blockquote tag&lt;/blockquote&gt;" class="hljs html"><span><span class="hljs-tag">&lt;<span class="hljs-name">foo</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">foo</span>&gt;</span></span></code></pre>
+          </div>
+        </div>
+        <div class="code-block">
+          <div class="code-block-heading"><span><a href="https://markbind.org/images/logo-lightbackground.png" target="_self"><img src="https://markbind.org/images/logo-lightbackground.png" alt="" class="img-fluid"></a></span></div>
+          <div class="code-block-content">
+            <pre><code heading="![](https://markbind.org/images/logo-lightbackground.png)" class="hljs html"><span><span class="hljs-tag">&lt;<span class="hljs-name">foo</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">foo</span>&gt;</span></span></code></pre>
+          </div>
+        </div>
+        <div class="code-block">
+          <div class="code-block-heading"><span>@<a href="http://www.youtube.com/watch?v=v40b3ExbM0c">youtube</a></span></div>
+          <div class="code-block-content">
+            <pre><code heading="@[youtube](http://www.youtube.com/watch?v=v40b3ExbM0c)" class="hljs html"><span><span class="hljs-tag">&lt;<span class="hljs-name">foo</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">foo</span>&gt;</span></span></code></pre>
+          </div>
+        </div>
+        <ul>
+          <li>Can't support <code>inline code</code> text style (because it would break markdown-it attrs)</li>
+          <li>Dim does not really work.</li>
+          <li>Can't do lists, paragraphs, footnotes, embeds</li>
+        </ul>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
           <a class="navbar-brand page-nav-title" href="#">Chapters of This Page</a>
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#light-cannot-be-used-with-seamless">Light cannot be used with seamless&#x200E;</a>
-            <a class="nav-link py-1" href="#no-xx-and-xx-attributes">no-xx and xx attributes&#x200E;</a>
-            <a class="nav-link py-1" href="#no-background-border-and-seamless-option">no-background/border and seamless option&#x200E;</a>
-            <a class="nav-link py-1" href="#a-normal-dropdwon">A normal dropdwon&#x200E;</a>
-            <a class="nav-link py-1" href="#dropdown-with-header-slot-header-attribute-has-no-effect">Dropdown with header slot. header attribute has no effect&#x200E;</a>
-            <a class="nav-link py-1" href="#dropdown-with-header-slot-text-attribute-has-no-effect">Dropdown with header slot. text attribute has no effect&#x200E;</a>
-            <a class="nav-link py-1" href="#dropdown-with-both-text-and-header-attribute">Dropdown with both text and header attribute.&#x200E;</a>
-            <a class="nav-link py-1" href="#markbind-code">Markbind code&#x200E;</a>
 
           </nav>
         </div>
