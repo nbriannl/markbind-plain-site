@@ -3,3 +3,8 @@ _site/*
 _markbind/*
 _markbind/logs/*.json
 _markbind/logs/*.log
+_markbind/logs/
+
+logs
+*.log
+npm-debug.log*
