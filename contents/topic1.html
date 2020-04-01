@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -17,9 +17,10 @@
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
+  <link rel="stylesheet" href="../markbind/css/page-nav.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
       <navbar type="dark" class="temp-navbar">
@@ -43,7 +44,7 @@
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
           <ul class="px-0 site-nav-list">
             <li class="mt-2"><a href="/index.html" class="site-nav__a">Home 🏠</a></li>
-            <li class="mt-2"><a href="/contents/topic1.html" class="site-nav__a current">Topic 1</a></li>
+            <li class="mt-2"><a href="/contents/topic1.html" class="site-nav__a">Topic 1</a></li>
             <li class="mt-2"><a href="/contents/topic2.html" class="site-nav__a">Topic 2</a></li>
             <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Topic 3 
  <i class="dropdown-btn-icon rotate-icon">
@@ -60,11 +61,187 @@
       </nav>
       <div id="content-wrapper">
         <br>
-        <h1 id="topic-1">Topic 1<a class="fa fa-anchor" href="#topic-1"></a></h1>
-        <blockquote>
-          <p>More content to be added</p>
-        </blockquote>
+        <h1 id="1168-bug-trim-in-codeandoutput-md-does-not-work-here">#1168 Bug: Trim in <a href="http://codeAndOutput.md">codeAndOutput.md</a> does not work here<a class="fa fa-anchor" href="#1168-bug-trim-in-codeandoutput-md-does-not-work-here"></a></h1>
+        <div>
+
+
+          <p><span class="dimmed">CODE:</span></p>
+          <div class="indented">
+            <pre><code class="no-line-numbers hljs markdown"><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></span></span><span>The fault lies in the break</span><span>&#x200B;</span></code></pre>
+          </div>
+          <p><span class="dimmed">OUTPUT:</span></p>
+          <div class="indented">
+            <box border-left-color="grey" background-color="white">
+              <br> The fault lies in the break
+            </box>
+          </div>
+        </div>
+        <div>
+
+
+          <p><span class="dimmed">CODE:</span></p>
+          <div class="indented">
+            <pre><code class="no-line-numbers hljs markdown"><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span></span></span><span>hr also will cause it</span><span>&#x200B;</span></code></pre>
+          </div>
+          <p><span class="dimmed">OUTPUT:</span></p>
+          <div class="indented">
+            <box border-left-color="grey" background-color="white">
+              <hr> hr also will cause it
+            </box>
+          </div>
+        </div>
+        <hr>
+        <h1 id="1168-bug-using-codeandoutput-md-boilerplate-will-cause-wrong-rendering-of-boolean-attributes">#1168 Bug: Using <a href="http://codeAndOutput.md">codeAndOutput.md</a> boilerplate will cause wrong rendering of boolean attributes<a class="fa fa-anchor" href="#1168-bug-using-codeandoutput-md-boilerplate-will-cause-wrong-rendering-of-boolean-attributes"></a></h1>
+        <ul>
+          <li>light</li>
+          <li>dismissible</li>
+          <li>minimized</li>
+          <li>expanded</li>
+          <li>no-switch, no-close</li>
+        </ul>
+        <p>But works for some boolean attributes e.g. seamless</p>
+
+        <div>
+
+
+          <p><span class="dimmed">CODE:</span></p>
+          <div class="indented">
+            <pre><code class="no-line-numbers hljs markdown"><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">box</span> <span class="hljs-attr">dismissible</span>=<span class="hljs-string">""</span>&gt;</span></span></span><span><span class="hljs-code">    dismissible info</span></span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">box</span>&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">box</span> <span class="hljs-attr">light</span>=<span class="hljs-string">""</span>&gt;</span></span></span><span><span class="hljs-code">    warning light</span></span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">box</span>&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">box</span> <span class="hljs-attr">seamless</span>&gt;</span></span></span><span><span class="hljs-code">    info seamless</span></span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">box</span>&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">panel</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Panel header"</span> <span class="hljs-attr">expanded</span>=<span class="hljs-string">""</span>&gt;</span></span></span><span>  ...</span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">panel</span>&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">panel</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Panel header"</span> <span class="hljs-attr">minimized</span>=<span class="hljs-string">""</span>&gt;</span></span></span><span>  ...</span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">panel</span>&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">panel</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"This panel does not have either buttons"</span> <span class="hljs-attr">no-close</span>=<span class="hljs-string">""</span> <span class="hljs-attr">no-switch</span>=<span class="hljs-string">""</span>&gt;</span></span></span><span>  ...</span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">panel</span>&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">question</span> <span class="hljs-attr">has-input</span>=<span class="hljs-string">""</span>&gt;</span></span></span><span>  Which country did the Hawaiian pizza originate from?</span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">question</span>&gt;</span></span></span></code></pre>
+          </div>
+          <p><span class="dimmed">OUTPUT:</span></p>
+          <div class="indented">
+            <box border-left-color="grey" background-color="white">
+              <box dismissible="">
+                dismissible info
+              </box>
+              <box light="">
+                warning light
+              </box>
+              <box seamless>
+                info seamless
+              </box>
+              <panel expanded=""><template slot="_header"><p>Panel header</p></template> ...
+              </panel>
+              <panel minimized=""><template slot="_header"><p>Panel header</p></template> ...
+              </panel>
+              <panel no-close="" no-switch=""><template slot="_header"><p>This panel does not have either buttons</p></template> ...
+              </panel>
+              <question has-input="">
+                Which country did the Hawaiian pizza originate from?
+              </question>
+            </box>
+          </div>
+        </div>
+        <hr>
+        <h1 id="1168-bug-have-to-put-spaces-on-empty-lines-or-else-the-spans-will-collapse-markdown-it-rendering-issue-or-variable-related-issue">#1168 Bug: Have to put spaces on empty lines or else the spans will collapse. Markdown-it rendering issue or variable related issue?<a class="fa fa-anchor" href="#1168-bug-have-to-put-spaces-on-empty-lines-or-else-the-spans-will-collapse-markdown-it-rendering-issue-or-variable-related-issue"></a></h1>
+
+        <div>
+
+
+          <p><span class="dimmed">CODE:</span></p>
+          <div class="indented">
+            <pre><code class="no-line-numbers hljs markdown"><span><span class="hljs-code">```java {highlight-lines="2,4,6-8"}</span></span><span><span class="hljs-code">import java.util.List;</span></span><span><span class="hljs-code"> </span></span><span><span class="hljs-code">public class Inventory {</span></span><span><span class="hljs-code">    private List&lt;Item&gt; items;</span></span><span><span class="hljs-code"> </span></span><span><span class="hljs-code">    public int getItemCount(){</span></span><span><span class="hljs-code">        return items.size();</span></span><span><span class="hljs-code">    }</span></span><span><span class="hljs-code"> </span></span><span><span class="hljs-code">    //...</span></span><span><span class="hljs-code">}</span></span><span><span class="hljs-code">```</span></span></code></pre>
+          </div>
+          <p><span class="dimmed">OUTPUT:</span></p>
+          <div class="indented">
+            <box border-left-color="grey" background-color="white">
+              <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.List;</span><span class="highlighted"> </span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{</span><span class="highlighted">    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;</span><span> </span><span class="highlighted">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{</span><span class="highlighted">        <span class="hljs-keyword">return</span> items.size();</span><span class="highlighted">    }</span><span> </span><span>    <span class="hljs-comment">//...</span></span><span>}</span></code></pre>
+            </box>
+          </div>
+        </div>
+        <hr>
+        <h1 id="1168-bug-using-codeandoutput-md-boilerplate-causes-extra-divs-to-render">#1168 Bug: Using <a href="http://codeAndOutput.md">codeAndOutput.md</a> boilerplate causes extra divs to render<a class="fa fa-anchor" href="#1168-bug-using-codeandoutput-md-boilerplate-causes-extra-divs-to-render"></a></h1>
+
+        <div>
+
+
+          <p><span class="dimmed">CODE:</span></p>
+          <div class="indented">
+            <pre><code class="no-line-numbers hljs markdown"><span><span class="xml"><span class="hljs-comment">&lt;!--Notice how header attribute supports inline MarkDown--&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"temp-dropdown-placeholder"</span>&gt;</span></span><span class="hljs-emphasis">*Action*</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">dropdown</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"*Action*"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"temp-dropdown"</span>&gt;</span></span></span><span>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>&gt;</span></span>...<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">dropdown</span>&gt;</span></span></span><span>&#x200B;</span><span><span class="xml"><span class="hljs-comment">&lt;!-- For segmented dropdown, ignore header and add a "before" slot --&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"temp-dropdown-placeholder"</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">dropdown</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"info"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"temp-dropdown"</span>&gt;</span></span></span><span>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">"before"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-info"</span>&gt;</span></span>Segmented<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span></span><span>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>&gt;</span></span>...<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">dropdown</span>&gt;</span></span></span><span>&#x200B;</span><span><span class="xml"><span class="hljs-comment">&lt;!-- Right aligned list --&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"temp-dropdown-placeholder"</span>&gt;</span></span>Right aligned list<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">dropdown</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Right aligned list"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span> <span class="hljs-attr">menu-align-right</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"temp-dropdown"</span>&gt;</span></span></span><span>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#dropdown"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>&gt;</span></span>Something else here<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">dropdown</span>&gt;</span></span></span></code></pre>
+          </div>
+          <p><span class="dimmed">OUTPUT:</span></p>
+          <div class="indented">
+            <box border-left-color="grey" background-color="white">
+
+              <div class="temp-dropdown-placeholder">*Action*</div>
+              <dropdown type="primary" class="temp-dropdown"><template slot="_header"><em>Action</em></template>
+                <li><a href="" class="dropdown-item">...</a></li>
+              </dropdown>
+
+              <div class="temp-dropdown-placeholder"></div>
+              <dropdown type="info" class="temp-dropdown">
+                <button slot="before" type="button" class="btn btn-info">Segmented</button>
+                <li><a href="" class="dropdown-item">...</a></li>
+              </dropdown>
+
+              <div class="temp-dropdown-placeholder">Right aligned list</div>
+              <dropdown type="primary" menu-align-right="" class="temp-dropdown"><template slot="_header">Right aligned list</template>
+                <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
+              </dropdown>
+            </box>
+          </div>
+        </div>
+
+        <div>
+
+
+          <p><span class="dimmed">CODE:</span></p>
+          <div class="indented">
+            <pre><code class="no-line-numbers hljs markdown"><span><span class="xml"><span class="hljs-comment">&lt;!-- In a button group --&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-group d-flex"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"group"</span>&gt;</span></span></span><span>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#dropdown"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-danger w-100"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span></span>Left<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></span><span>  <span class="xml"><span class="hljs-comment">&lt;!-- With slots you can handle some elements as native bootstrap --&gt;</span></span></span><span>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"w-100 temp-dropdown-placeholder"</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">dropdown</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"w-100 temp-dropdown"</span>&gt;</span></span></span><span><span class="hljs-code">    &lt;button slot="button" type="button" class="btn btn-warning dropdown-toggle w-100"&gt;</span></span><span><span class="hljs-code">      Action</span></span><span><span class="hljs-code">      &lt;span class="caret"&gt;&lt;/span&gt;</span></span><span><span class="hljs-code">    &lt;/button&gt;</span></span><span><span class="hljs-code">    &lt;ul slot="dropdown-menu" class="dropdown-menu"&gt;</span></span><span><span class="hljs-code">      &lt;li&gt;&lt;a href="#dropdown" class="dropdown-item"&gt;...&lt;/a&gt;&lt;/li&gt;</span></span><span><span class="hljs-code">    &lt;/ul&gt;</span></span><span>  <span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">dropdown</span>&gt;</span></span></span><span>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#dropdown"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-success w-100"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span>&gt;</span></span>Right<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></span></code></pre>
+          </div>
+          <p><span class="dimmed">OUTPUT:</span></p>
+          <div class="indented">
+            <box border-left-color="grey" background-color="white">
+
+              <div class="btn-group d-flex" role="group">
+                <a href="#dropdown" class="btn btn-danger w-100" role="button">Left</a>
+
+                <div class="w-100 temp-dropdown-placeholder"></div>
+                <dropdown class="w-100 temp-dropdown">
+                  <button slot="button" type="button" class="btn btn-warning dropdown-toggle w-100">
+      Action
+      <span class="caret"></span></button>
+                  <ul slot="dropdown-menu" class="dropdown-menu">
+                    <li><a href="#dropdown" class="dropdown-item">...</a></li>
+                  </ul>
+                </dropdown>
+                <a href="#dropdown" class="btn btn-success w-100" role="button">Right</a></div>
+            </box>
+          </div>
+        </div>
+        <hr>
+        <h1 id="1168-bug-src-preload-and-fragment-attribute-also-shows">#1168 Bug: Src, preload and fragment attribute also shows<a class="fa fa-anchor" href="#1168-bug-src-preload-and-fragment-attribute-also-shows"></a></h1>
+
+        <div>
+
+
+          <p><span class="dimmed">CODE:</span></p>
+          <div class="indented">
+            <pre><code class="no-line-numbers hljs markdown"><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">panel</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Right click and inspect my HTML before expanding me!"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"C:\Users\neilb\Projects\markbind-plain-site\contents\extra\loadContent.html"</span> <span class="hljs-attr">preload</span>=<span class="hljs-string">""</span> <span class="hljs-attr">fragment</span>=<span class="hljs-string">"fragment"</span>&gt;</span></span></span><span>  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span>You should be able to find this text before expanding the Panel.<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">panel</span>&gt;</span></span></span></code></pre>
+          </div>
+          <p><span class="dimmed">OUTPUT:</span></p>
+          <div class="indented">
+            <box border-left-color="grey" background-color="white">
+              <panel src="/contents/extra/loadContent._include_.html#fragment" preload="" fragment="fragment"><template slot="_header"><p>Right click and inspect my HTML before expanding me!</p></template>
+                <p>You should be able to find this text before expanding the Panel.</p>
+              </panel>
+            </box>
+          </div>
+        </div>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+          <a class="navbar-brand page-nav-title" href="#">Chapters of This Page</a>
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#1168-bug-trim-in-codeandoutput-md-does-not-work-here">#1168 Bug: Trim in codeAndOutput.md does not work here&#x200E;</a>
+            <a class="nav-link py-1" href="#1168-bug-using-codeandoutput-md-boilerplate-will-cause-wrong-rendering-of-boolean-attributes">#1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes&#x200E;</a>
+            <a class="nav-link py-1" href="#1168-bug-have-to-put-spaces-on-empty-lines-or-else-the-spans-will-collapse-markdown-it-rendering-issue-or-variable-related-issue">#1168 Bug: Have to put spaces on empty lines or else the spans will collapse. Markdown-it rendering issue or variable related issue?&#x200E;</a>
+            <a class="nav-link py-1" href="#1168-bug-using-codeandoutput-md-boilerplate-causes-extra-divs-to-render">#1168 Bug: Using codeAndOutput.md boilerplate causes extra divs to render&#x200E;</a>
+            <a class="nav-link py-1" href="#1168-bug-src-preload-and-fragment-attribute-also-shows">#1168 Bug: Src, preload and fragment attribute also shows&#x200E;</a>
+
+          </nav>
+        </div>
+      </nav>
     </div>
   </div>
 </body>

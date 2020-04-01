@@ -2,26 +2,33 @@
   "enableSearch": true,
   "pages": [
     {
-      "header": "header.md",
-      "pageNav": 2,
-      "pageNavTitle": "Chapters of This Page",
-      "siteNav": "site-nav.md",
-      "src": "index.md",
-      "title": "Landing Page",
+      "src": "contents/extra/quiz.md",
+      "title": "",
       "layout": "default",
-      "headings": {
-        "equivalent-code": "Equivalent code"
-      },
+      "headings": {},
+      "headingKeywords": {}
+    },
+    {
+      "src": "contents/extra/triggers.mbdf",
+      "title": "",
+      "layout": "default",
+      "headings": {},
       "headingKeywords": {}
     },
     {
       "header": "header.md",
+      "pageNav": 2,
+      "pageNavTitle": "Chapters of This Page",
       "siteNav": "site-nav.md",
-      "src": "contents/topic1.md",
+      "src": "contents/topic1.mbdf",
       "title": "",
       "layout": "default",
       "headings": {
-        "topic-1": "Topic 1"
+        "1168-bug-trim-in-codeandoutput-md-does-not-work-here": "#1168 Bug: Trim in codeAndOutput.md does not work here",
+        "1168-bug-using-codeandoutput-md-boilerplate-will-cause-wrong-rendering-of-boolean-attributes": "#1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes",
+        "1168-bug-have-to-put-spaces-on-empty-lines-or-else-the-spans-will-collapse-markdown-it-rendering-issue-or-variable-related-issue": "#1168 Bug: Have to put spaces on empty lines or else the spans will collapse. Markdown-it rendering issue or variable related issue?",
+        "1168-bug-using-codeandoutput-md-boilerplate-causes-extra-divs-to-render": "#1168 Bug: Using codeAndOutput.md boilerplate causes extra divs to render",
+        "1168-bug-src-preload-and-fragment-attribute-also-shows": "#1168 Bug: Src, preload and fragment attribute also shows"
       },
       "headingKeywords": {}
     },
@@ -50,6 +57,38 @@
       "title": "",
       "layout": "default",
       "headings": {},
+      "headingKeywords": {}
+    },
+    {
+      "src": "extra/quiz.md",
+      "title": "",
+      "layout": "default",
+      "headings": {},
+      "headingKeywords": {}
+    },
+    {
+      "src": "extra/triggers.mbdf",
+      "title": "",
+      "layout": "default",
+      "headings": {},
+      "headingKeywords": {}
+    },
+    {
+      "header": "header.md",
+      "pageNav": 2,
+      "pageNavTitle": "Chapters of This Page",
+      "siteNav": "site-nav.md",
+      "src": "index.mbdf",
+      "title": "Landing Page",
+      "layout": "default",
+      "headings": {
+        "1168-bug-trim-in-codeandoutput-md-does-not-work-here": "#1168 Bug: Trim in codeAndOutput.md does not work here",
+        "1168-bug-using-codeandoutput-md-boilerplate-will-cause-wrong-rendering-of-boolean-attributes": "#1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes",
+        "1168-bug-have-to-put-spaces-on-empty-lines-or-else-the-spans-will-collapse-markdown-it-rendering-issue-or-variable-related-issue": "#1168 Bug: Have to put spaces on empty lines or else the spans will collapse. Markdown-it rendering issue or variable related issue?",
+        "1168-bug-using-codeandoutput-md-boilerplate-causes-extra-divs-to-render": "#1168 Bug: Using codeAndOutput.md boilerplate causes extra divs to render",
+        "1168-bug-src-resolves-to-full-absolute-path": "#1168 Bug: src resolves to full absolute path",
+        "1168-bug-fragment-attribute-also-shows": "#1168 Bug: Fragment attribute also shows"
+      },
       "headingKeywords": {}
     }
   ]

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <p><strong><strong>Triggers</strong></strong>
+        </p>
+        <p>Trigger provides more flexibility in triggering contextual overlay via Tooltip, Popover or Modal.</p>
+        <p>You could embed a Trigger within the text, and define the Tooltip, Popover or Modal at a separate location, which allows for a cleaner authoring flow.</p>
+        <p>Specify the <code>id</code> attribute on the Tooltip, Popover or Modal component, and use the same <code>id</code> in the <code>for</code> attribute of the Trigger to allow the Trigger to invoke the specific overlay elements. Additionally, multiple
+          Triggers could share the same overlay by providing them with the same <code>id</code>.
+          <br></p>
+        <p><strong>Trigger's <code>trigger</code> attribute (which defaults to <code>hover</code>) is independent of the target's.</strong></p>
+        <p><strong><strong>Options</strong></strong>
+        </p>
+        <div class="table-responsive">
+          <table class="markbind-table table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>trigger</td>
+                <td><code>String</code></td>
+                <td><code>hover</code></td>
+                <td>How the overlay view is triggered.<br>Supports: <code>click</code>, <code>focus</code>, <code>hover</code>.</td>
+              </tr>
+              <tr>
+                <td>for</td>
+                <td><code>String</code></td>
+                <td><code>null</code></td>
+                <td>The id for the overlay view to be shown.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = ''
+  const enableSearch = true
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>

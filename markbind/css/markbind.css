@@ -46,17 +46,8 @@ pre > code.hljs[heading] {
     text-align: right;
 }
 
-.code-block-heading-with-inline {
-    background-color: #f2f2ff;
-    border-radius: 6px 6px 0 0;
-    color: #8787a5;
-    float: right;
-    font-size: 85%;
+.inline-markdown-heading {
     line-height: 1.5;
-    max-width: 85%;
-    overflow-wrap: break-word;
-    padding: 0.25em 0.4em;
-    text-align: right;
 }
 
 .code-block-content {
@@ -155,10 +146,10 @@ header.header-fixed {
 #content-wrapper {
     flex: 1;
     margin: 0 auto;
+    min-width: 0;
     max-width: 1000px;
     padding: 0 20px;
     transition: 0.4s;
-    width: 100%;
     -webkit-transition: 0.4s;
 }
 
@@ -391,7 +382,12 @@ li.footnote-item:target {
 
 /* styles for triggers */
 .trigger {
-    text-decoration: underline dotted;
+    border-bottom: 1px dashed currentColor;
+}
+
+.trigger-click {
+    cursor: pointer;
+    border-bottom: 1px dashed currentColor;
 }
 
 .modal.mb-zoom {
@@ -453,4 +449,10 @@ pre {
 
 .copy-btn:focus {
     outline: none;
+}
+
+/* Octicon sizing */
+.octicon {
+    height: 1em;
+    width: 1em;
 }
