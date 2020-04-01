@@ -440,32 +440,6 @@ public class Inventory {
 </variable>
 </include>
 
-<!-- #1168 Bug: Using codeAndOutput.md boilerplate causes extra divs to render -->
-<include src="codeAndOutput.md" boilerplate >
-<variable name="code">
-<!-- In a button group -->
-<div class="btn-group d-flex" role="group">
-  <a href="#dropdown" class="btn btn-danger w-100" role="button">Left</a>
-  <!-- With slots you can handle some elements as native bootstrap -->
-  <dropdown class="w-100">
-    <button slot="button" type="button" class="btn btn-warning dropdown-toggle w-100">
-      Action
-      <span class="caret"></span>
-    </button>
-    <ul slot="dropdown-menu" class="dropdown-menu">
-      <li><a href="#dropdown" class="dropdown-item">Action</a></li>
-      <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
-      <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
-      <li role="separator" class="dropdown-divider"></li>
-      <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
-    </ul>
-  </dropdown>
-  <a href="#dropdown" class="btn btn-success w-100" role="button">Right</a>
-</div>
-</variable>
-</include>
-
-
 ------------
 
 # #1168 Bug: src resolves to full absolute path
