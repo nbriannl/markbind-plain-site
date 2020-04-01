@@ -10,6 +10,12 @@
 # #1168 Bug: Trim in codeAndOutput.md does not work here
 
 <include src="codeAndOutput.md" boilerplate >
+<variable name="expected">
+```markdown{.no-line-numbers}
+<br>
+The fault lies in the break
+```
+</variable>
 <variable name="code">
 <br>
 The fault lies in the break
@@ -17,6 +23,12 @@ The fault lies in the break
 </include>
 
 <include src="codeAndOutput.md" boilerplate >
+<variable name="expected">
+```markdown{.no-line-numbers}
+<hr>
+hr also will cause it
+```
+</variable>
 <variable name="code">
 <hr>
 hr also will cause it
@@ -36,6 +48,31 @@ But works for some boolean attributes e.g. seamless
 
 <!-- #1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes, e.g. light, dismissible etc. -->
 <include src="codeAndOutput.md" boilerplate >
+<variable name="expected">
+```markdown{.no-line-numbers}
+<box dismissible>
+    dismissible info
+</box>
+<box light>
+    warning light
+</box>
+<box seamless>
+    info seamless
+</box>
+<panel header="Panel header" expanded>
+  ...
+</panel>
+<panel header="Panel header" minimized>
+  ...
+</panel>
+<panel header="This panel does not have either buttons" no-close no-switch>
+  ...
+</panel>
+<question has-input>
+  Which country did the Hawaiian pizza originate from?
+</question>
+```
+</variable>
 <variable name="code">
 <box dismissible>
     dismissible info
@@ -67,17 +104,34 @@ But works for some boolean attributes e.g. seamless
 
 <!-- #1168 Bug: Have to put spaces on empty lines or else the spans will collapse. Markdown it rendering issue or variable related issue? -->
 <include src="codeAndOutput.md" boilerplate >
-<variable name="code">
+<variable name="expected">
+````markdown{.no-line-numbers}
 ```java {highlight-lines="2,4,6-8"}
 import java.util.List;
- 
+​
 public class Inventory {
     private List<Item> items;
- 
+​
     public int getItemCount(){
         return items.size();
     }
- 
+​
+    //...
+}
+```
+````
+</variable>
+<variable name="code">
+```java {highlight-lines="2,4,6-8"}
+import java.util.List;
+​
+public class Inventory {
+    private List<Item> items;
+​
+    public int getItemCount(){
+        return items.size();
+    }
+​
     //...
 }
 ```
