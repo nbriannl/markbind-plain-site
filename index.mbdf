@@ -372,14 +372,14 @@ But works for some boolean attributes e.g. seamless
 <variable name="code">
 ```java {highlight-lines="2,4,6-8"}
 import java.util.List;
-
+​
 public class Inventory {
     private List<Item> items;
-
+​
     public int getItemCount(){
         return items.size();
     }
-
+​
     //...
 }
 ```
