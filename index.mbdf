@@ -1,0 +1,478 @@
+<frontmatter>
+  header: header.md
+  pageNav: 2
+  pageNavTitle: "Chapters of This Page"
+  siteNav: site-nav.md
+</frontmatter>
+
+<br>
+
+# #1168 Bug: Trim in codeAndOutput.md does not work here
+
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+Normal:
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span>
+<br>Pills:
+<span class="badge badge-pill badge-primary">Primary</span>
+<span class="badge badge-pill badge-secondary">Secondary</span>
+<span class="badge badge-pill badge-success">Success</span>
+<span class="badge badge-pill badge-danger">Danger</span>
+<span class="badge badge-pill badge-warning">Warning</span>
+<span class="badge badge-pill badge-info">Info</span>
+<span class="badge badge-pill badge-light">Light</span>
+<span class="badge badge-pill badge-dark">Dark</span>
+</variable>
+</include>
+<!-- #1168 Bug: Trim in codeAndOutput.md does not work here -->
+
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+Consider the xml code `<bar type="name">goo</bar>`{.xml},<br>
+or the java code `public static void main(String[] args)`{.java}.
+</variable>
+</include>
+<!-- #1168 Bug: Trim in codeAndOutput.md does not work here -->
+
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+This is the second sentence.<br>
+This should be on a new line.
+This will not be in a new line.
+</variable>
+<!-- #1168 Bug: Trim in codeAndOutput.md does not work here -->
+
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+* Item 1
+  * Sub item 1.1
+  * Sub item 1.2<br>
+    Second line
+    * Sub item 1.2.1
+* Item 2
+* Item 3
+</variable>
+</include>
+<!-- #1168 Bug: Trim in codeAndOutput.md does not work here -->
+
+<modal header="OK button visible!" id="modal:ok-text" ok-text="Custom OK">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</modal>
+</variable>
+</include>
+<!-- #1168 Bug: Trim in codeAndOutput.md does not work here -->
+
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<popover effect="fade" content="Lorem ipsum dolor sit amet" placement="top">
+  <button class="btn btn-secondary">Popover on top</button>
+</popover>
+<popover effect="fade" content="Lorem ipsum dolor sit amet" placement="left">
+  <button class="btn btn-secondary">Popover on left</button>
+</popover>
+<popover effect="fade" content="Lorem ipsum dolor sit amet" placement="right">
+  <button class="btn btn-secondary">Popover on right</button>
+</popover>
+<popover effect="fade" content="Lorem ipsum dolor sit amet" placement="bottom">
+  <button class="btn btn-secondary">Popover on bottom</button>
+</popover>
+<hr>
+<h4 class="no-index">Header</h4>
+<popover effect="fade" header="Header" content="Lorem ipsum dolor sit amet" placement="top">
+  <button class="btn btn-secondary">Popover on top</button>
+</popover>
+<popover effect="fade" header="Header" content="Lorem ipsum dolor sit amet" placement="left">
+  <button class="btn btn-secondary">Popover on left</button>
+</popover>
+<popover effect="fade" header="Header" content="Lorem ipsum dolor sit amet" placement="right">
+  <button class="btn btn-secondary">Popover on right</button>
+</popover>
+<popover effect="fade" header="Header" content="Lorem ipsum dolor sit amet" placement="bottom">
+  <button class="btn btn-secondary">Popover on bottom</button>
+</popover>
+<hr />
+<h4 class="no-index">Trigger</h4>
+<p>
+  <popover effect="scale" header="Header" content="Lorem ipsum dolor sit amet" placement="top" trigger="hover">
+    <button class="btn btn-secondary">Mouseenter</button>
+  </popover>
+</p>
+<h4 class="no-index">Markdown</h4>
+<p>
+  <popover effect="scale" header="**Emoji header** :rocket:" content="++emoji++ content :cat:">
+    <button class="btn btn-secondary">Hover</button>
+  </popover>
+</p>
+<h4 class="no-index">Content using slot</h4>
+<popover effect="scale" header="**Emoji header** :rocket:">
+  <div slot="content">
+    This is a long content...
+  </div>
+  <button class="btn btn-secondary">Hover</button>
+</popover>
+<br />
+<br />
+<h4 class="no-index">Wrap Text</h4>
+<popover header="false" content="Nice!">What do you say</popover>
+</variable>
+</include>
+<!-- #1168 Bug: Trim in codeAndOutput.md does not work here -->
+
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+More about <trigger for="pop:trigger_id">trigger</trigger>.
+<popover id="pop:trigger_id" content="This popover is triggered by a trigger"></popover>
+<br>
+This is the same <trigger for="pop:trigger_id">trigger</trigger> as last one.
+</variable>
+</include>
+<!-- #1168 Bug: Trim in codeAndOutput.md does not work here -->
+
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+More about <trigger for="tt:trigger_id">trigger</trigger>.
+<tooltip id="tt:trigger_id" content="This tooltip triggered by a trigger"></tooltip>
+<br>
+This is the same <trigger for="tt:trigger_id">trigger</trigger> as last one.
+</variable>
+</include>
+<!-- #1168 Bug: Trim in codeAndOutput.md does not work here -->
+
+-----
+
+
+# #1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes
+- light
+- dismissible
+- minimized
+- expanded
+- no-switch, no-close
+
+But works for some boolean attributes e.g. seamless
+
+<!-- #1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes, e.g. light, dismissible etc. -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<box>
+    default
+</box>
+<box type="info">
+    info
+</box>
+<box type="warning">
+    warning
+</box>
+<box type="success">
+    success
+</box>
+<box type="important">
+    important
+</box>
+<box type="wrong">
+    wrong
+</box>
+<box type="tip">
+    tip
+</box>
+<box type="definition">
+    definition
+</box>
+<box type="info" dismissible>
+    dismissible info
+</box>
+<box type="success" header="#### Header :rocket:" icon-size="2x">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <box type="warning" header="You can use **markdown** here! :pizza:" dismissible>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </box>
+</box>
+</variable>
+</include>
+
+<!-- #1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes, e.g. light, dismissible etc. -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<box type="info" light>
+    info light
+</box>
+<box type="warning" light>
+    warning light
+</box>
+<box type="success" light>
+    success light
+</box>
+<box type="important" light>
+    important light
+</box>
+<box type="wrong" light>
+    wrong light
+</box>
+<box type="tip" light>
+    tip light
+</box>
+<box type="definition" light>
+    definition light
+</box>
+</variable>
+</include>
+
+<!-- #1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes, e.g. light, dismissible etc. -->
+<!--            But seamless does not seem to be affected -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<box type="info" seamless>
+    info seamless
+</box>
+<box type="warning" seamless>
+    warning seamless
+</box>
+<box type="success" seamless>
+    success seamless
+</box>
+<box type="important" seamless>
+    important seamless
+</box>
+<box type="wrong" seamless>
+    wrong seamless
+</box>
+<box type="tip" seamless>
+    tip seamless
+</box>
+<box type="definition" seamless>
+    definition seamless
+</box>
+</variable>
+</include>
+
+<!-- #1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes, e.g. minimized -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<panel header="How to cultivate a tomato plant at home" alt="Tomatoes" minimized>
+  Lorem ipsum ...
+</panel>
+</variable>
+</include>
+
+<!-- #1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes, e.g. expanded -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<panel header="Have your readers click less to see the Panel's contents" expanded>
+  Lorem ipsum ...
+</panel>
+</variable>
+</include>
+
+<!-- #1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes, e.g. minimized -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<panel header="**light type panel (DEFAULT)**" type="light" minimized>
+  ...
+</panel>
+<panel header="**dark type panel**" type="dark" minimized>
+  ...
+</panel>
+<panel header="**primary type panel**" type="primary" minimized>
+  ...
+</panel>
+<panel header="**secondary type panel**" type="secondary" minimized>
+  ...
+</panel>
+<panel header="**info type panel**" type="info" minimized>
+  ...
+</panel>
+<panel header="**danger type panel**" type="danger" minimized>
+  ...
+</panel>
+<panel header="**warning type panel**" type="warning" minimized>
+  ...
+</panel>
+<panel header="**success type panel**" type="success" minimized>
+  ...
+</panel>
+<panel header="**seamless type panel**" type="seamless" minimized>
+  ...
+</panel>
+<panel header="**minimal type panel**" type="minimal" minimized>
+  ...
+</panel>
+</variable>
+</include>
+
+<!-- #1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes, e.g. no-switch, no-close -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<panel header="This panel does not have a switch button" no-switch>
+  ...
+</panel>
+<panel header="This panel does not have a close button" no-close>
+  ...
+</panel>
+<panel header="This panel does not have either buttons" no-close no-switch>
+  ...
+</panel>
+</variable>
+</include>
+
+<!-- #1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes, e.g. minimized -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<panel header="Q1 :crown:" minimized>
+  <question has-input>
+    Who is the first king of Thailand?
+  </question>
+</panel>
+<panel header="Q2 :pizza:" minimized>
+  <question has-input>
+    Which country did the Hawaiian pizza originate from?
+    <div slot="hint">
+      Not Italy or Haiwaii <md>:smirk:</md>
+    </div>
+  </question>
+</panel>
+</variable>
+</include>
+
+-------
+
+# #1168 Bug: Have to put spaces on empty lines or else the spans will collapse. Markdown-it rendering issue or variable related issue?
+
+<!-- #1168 Bug: Have to put spaces on empty lines or else the spans will collapse. Markdown it rendering issue or variable related issue? -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+```java {highlight-lines="2,4,6-8"}
+import java.util.List;
+ 
+public class Inventory {
+    private List<Item> items;
+ 
+    public int getItemCount(){
+        return items.size();
+    }
+ 
+    //...
+}
+```
+</variable>
+</include>
+
+--------
+
+# #1168 Bug: Using codeAndOutput.md boilerplate causes extra divs to render
+
+<!-- #1168 Bug: Using codeAndOutput.md boilerplate causes extra divs to render -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<!--Notice how header attribute supports inline MarkDown-->
+<dropdown header="*Action*" type="primary">
+  <li><a href="#dropdown" class="dropdown-item">Action</a></li>
+  <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
+  <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
+  <li role="separator" class="dropdown-divider"></li>
+  <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
+</dropdown>
+
+<!-- For segmented dropdown, ignore header and add a "before" slot -->
+<dropdown type="info">
+  <button slot="before" type="button" class="btn btn-info">Segmented</button>
+  <li><a href="#dropdown" class="dropdown-item">...</a></li>
+</dropdown>
+
+<!-- Right aligned list -->
+<dropdown header="Right aligned list" type="primary" menu-align-right>
+  <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
+</dropdown>
+</variable>
+</include>
+
+<!-- #1168 Bug: Using codeAndOutput.md boilerplate causes extra divs to render -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<!-- In a button group -->
+<div class="btn-group d-flex" role="group">
+  <a href="#dropdown" class="btn btn-danger w-100" role="button">Left</a>
+  <!-- With slots you can handle some elements as native bootstrap -->
+  <dropdown class="w-100">
+    <button slot="button" type="button" class="btn btn-warning dropdown-toggle w-100">
+      Action
+      <span class="caret"></span>
+    </button>
+    <ul slot="dropdown-menu" class="dropdown-menu">
+      <li><a href="#dropdown" class="dropdown-item">Action</a></li>
+      <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
+      <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
+      <li role="separator" class="dropdown-divider"></li>
+      <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
+    </ul>
+  </dropdown>
+  <a href="#dropdown" class="btn btn-success w-100" role="button">Right</a>
+</div>
+</variable>
+</include>
+
+<!-- #1168 Bug: Using codeAndOutput.md boilerplate causes extra divs to render -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<!-- In a button group -->
+<div class="btn-group d-flex" role="group">
+  <a href="#dropdown" class="btn btn-danger w-100" role="button">Left</a>
+  <!-- With slots you can handle some elements as native bootstrap -->
+  <dropdown class="w-100">
+    <button slot="button" type="button" class="btn btn-warning dropdown-toggle w-100">
+      Action
+      <span class="caret"></span>
+    </button>
+    <ul slot="dropdown-menu" class="dropdown-menu">
+      <li><a href="#dropdown" class="dropdown-item">Action</a></li>
+      <li><a href="#dropdown" class="dropdown-item">Another action</a></li>
+      <li><a href="#dropdown" class="dropdown-item">Something else here</a></li>
+      <li role="separator" class="dropdown-divider"></li>
+      <li><a href="#dropdown" class="dropdown-item">Separated link</a></li>
+    </ul>
+  </dropdown>
+  <a href="#dropdown" class="btn btn-success w-100" role="button">Right</a>
+</div>
+</variable>
+</include>
+
+
+------------
+
+# #1168 Bug: src resolves to full absolute path
+
+<!-- #1168 Bug: src resolves to full absolute path -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<panel header="Content loaded in from 'src'" src="extra/loadContent.html#fragment" minimized></panel>
+</variable>
+</include>
+
+<!-- #1168 Bug: src resolves to full absolute path -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<panel header="Questions loaded in from `quiz.md`" src="extra/quiz.md"></panel>
+</variable>
+</include>
+
+------------
+
+# #1168 Bug: Fragment attribute also shows 
+
+<!-- #1168 Bug: src resolves to full absolute path. Fragment attribute also shows -->
+<include src="codeAndOutput.md" boilerplate >
+<variable name="code">
+<panel header="Right click and inspect my HTML before expanding me!" src="extra/loadContent.html#fragment" preload>
+  <p>You should be able to find this text before expanding the Panel.</p>
+</panel>
+</variable>
+</include>
+
