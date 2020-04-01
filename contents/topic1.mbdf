@@ -25,7 +25,6 @@ hr also will cause it
 
 -----
 
-
 # #1168 Bug: Using codeAndOutput.md boilerplate will cause wrong rendering of boolean attributes
 - light
 - dismissible
